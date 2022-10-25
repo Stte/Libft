@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 14:09:24 by tspoof            #+#    #+#             */
-/*   Updated: 2022/10/25 16:48:16 by tspoof           ###   ########.fr       */
+/*   Created: 2022/10/25 16:41:02 by tspoof            #+#    #+#             */
+/*   Updated: 2022/10/25 16:49:33 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_strlen(const char *s)
+{
+	int	i;
 
-#ifndef	LIBFT_H
-# define LIBFT_H
+	i = 0;
+	while (s[i] != '\0')
+		i++;
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-int ft_strlen(const char *s);
-
-#endif
+	return (i);
+}

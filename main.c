@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:02:00 by tspoof            #+#    #+#             */
-/*   Updated: 2022/10/25 16:37:43 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/10/25 16:53:20 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "libft.h"
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 
 void	test_isalpha(void)
@@ -63,6 +64,7 @@ void	test_isascii(void)
 	printf(" 1114  = %s\n", ft_isascii(1114) == isascii(1114) ? "ok" : "FAIL");
 }
 
+// Good one
 void	test_isprint(void)
 {
 	int	i;
@@ -94,7 +96,30 @@ void	test_isprint(void)
 	{
 		printf("Passed\n");
 	}
+}
 
+void	test_strlen(void)
+{
+	int	errors;
+
+	errors = 0;
+	printf("Testing ft_isprint...\n");
+
+	if (ft_strlen("") != (int)strlen(""))
+	{
+		printf("FAIL, when string is \"\"\n");
+		errors += 1;
+	}
+	if (ft_strlen("Hello how are you?") != (int)strlen("Hello how are you?"))
+	{
+		printf("FAIL, when string is \"Hello how are you?\"\n");
+		errors += 1;
+	}
+
+	if (errors == 0)
+	{
+		printf("Passed\n");
+	}
 }
 
 int	main(void)
@@ -104,6 +129,7 @@ int	main(void)
 	test_isalnum();
 	test_isascii();
 	test_isprint();
+	test_strlen();
 
 	return (0);
 }
