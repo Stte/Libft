@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:02:00 by tspoof            #+#    #+#             */
-/*   Updated: 2022/10/26 12:15:44 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/10/26 13:08:37 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,7 +126,7 @@ void	test_memset(void)
 {
 	int		errors;
 	char	test[5];
-	int	i;
+	// int	i;
 
 	errors = 0;
 	printf("Testing ft_memset...\n");
