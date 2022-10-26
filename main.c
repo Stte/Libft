@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:02:00 by tspoof            #+#    #+#             */
-/*   Updated: 2022/10/26 17:39:52 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/10/26 19:19:58 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -176,10 +176,11 @@ void	test_memcpy(void)
 {
 	int		errors = 0;
 	size_t	i;
-	char	*src = "This is a test";
+	char	*src = "abcde";
 	char	dest[15];
 	char	dest1[15];
 
+	printf("Testing ft_memcpy...\n");
 	ft_memcpy(dest, src, ft_strlen(src) + 1);
 	memcpy(dest1, src, ft_strlen(src) + 1);
 
@@ -192,7 +193,32 @@ void	test_memcpy(void)
 	}
 
 	if (!errors)
-		printf("Pass\n");
+		printf("Passed\n");
+	else
+		printf("FAIL\n");
+}
+
+void	test_memmove(void)
+{
+	char	a[50] = "testi";
+	char	b[50] = "testi";
+	int		i;
+	int		errors = 0;
+
+	printf("Testing ft_memmove...\n");
+	ft_memmove(&a[2], a, 4);
+	memmove(&b[2], b, 4);
+
+	i = 0;
+	while (i < 5)
+	{
+		if (a[i] != b[i])
+			errors++;
+		i++;
+	}
+
+	if (!errors)
+		printf("Passed\n");
 	else
 		printf("FAIL\n");
 }
@@ -208,5 +234,6 @@ int	main(void)
 	test_memset();
 	test_bzero();
 	test_memcpy();
+	test_memmove();
 	return (0);
 }
