@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:02:00 by tspoof            #+#    #+#             */
-/*   Updated: 2022/10/25 16:53:20 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/10/26 12:15:44 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void	test_strlen(void)
 	int	errors;
 
 	errors = 0;
-	printf("Testing ft_isprint...\n");
+	printf("Testing ft_strlen...\n");
 
 	if (ft_strlen("") != (int)strlen(""))
 	{
@@ -122,6 +122,28 @@ void	test_strlen(void)
 	}
 }
 
+void	test_memset(void)
+{
+	int		errors;
+	char	test[5];
+	int	i;
+
+	errors = 0;
+	printf("Testing ft_memset...\n");
+
+	// Not really testing anything
+	if (ft_memset(test, 'p', sizeof(test)) != memset(test, 'p', sizeof(test)))
+	{
+		printf("FAIL, when char is \'p\'\n");
+		errors += 1;
+	}
+
+	if (errors == 0)
+	{
+		printf("Passed\n");
+	}
+}
+
 int	main(void)
 {
 	test_isalpha();
@@ -130,6 +152,7 @@ int	main(void)
 	test_isascii();
 	test_isprint();
 	test_strlen();
+	test_memset();
 
 	return (0);
 }
