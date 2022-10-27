@@ -4,7 +4,7 @@ SRCS = ft_isalpha.c
 all: $(NAME)
 
 $(NAME): $(SRCS)
-	gcc $(FLAGS) -c $(SRCS)
+	cc $(FLAGS) -c $(SRCS)
 	ar rc $(NAME).a *.o
 	ranlib  $(NAME).a
 
