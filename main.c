@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:02:00 by tspoof            #+#    #+#             */
-/*   Updated: 2022/10/26 19:19:58 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/10/27 17:36:42 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,27 +121,24 @@ void	test_strlen(void)
 		printf("Passed\n");
 	}
 }
-// Not really testing anything
+
+// add tests
 void	test_memset(void)
 {
 	int		errors;
-	char	test[5];
+	char	str[] = "abc";
 	// int	i;
 
 	errors = 0;
 	printf("Testing ft_memset...\n");
-
-
-	if (ft_memset(test, 'p', sizeof(test)) != memset(test, 'p', sizeof(test)))
-	{
-		printf("FAIL, when char is \'p\'\n");
-		errors += 1;
-	}
+	ft_memset(str, '1', 5);
+	if (strlen(str) != 3)
+		errors++;
 
 	if (errors == 0)
-	{
 		printf("Passed\n");
-	}
+	else
+		printf("FAIL!\n");
 }
 
 void	test_bzero(void)
@@ -223,6 +220,33 @@ void	test_memmove(void)
 		printf("FAIL\n");
 }
 
+void	test_strlcpy(void)
+{
+	char	source[] = "testi";
+	char	dest1[10];
+	char	dest2[10];
+	int		errors = 0;
+	int		i;
+
+	printf("Testing ft_strlcpy...\n");
+
+	if (strlcpy(dest1, source, sizeof(dest1)) != ft_strlcpy(dest2, source, sizeof(dest2)))
+		errors++;
+
+	i = 0;
+	while(dest1[i] != '\0')
+	{
+		if (dest1[i] != dest2[i])
+			errors++;
+		i++;
+	}
+
+	if (errors)
+		printf("FAIL!\n");
+	else
+		printf("Passed");
+}
+
 int	main(void)
 {
 	test_isalpha();
@@ -235,5 +259,6 @@ int	main(void)
 	test_bzero();
 	test_memcpy();
 	test_memmove();
+	test_strlcpy();
 	return (0);
 }
