@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 18:09:01 by tspoof            #+#    #+#             */
-/*   Updated: 2022/10/27 17:02:33 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/10/27 19:20:30 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ void	*ft_memset(void *b, int c, int len)
 	int	i;
 
 	i = 0;
-	while (i < len && ((char *)b)[i])
+	while (i < len)
 	{
 		((char *)b)[i] = (unsigned char) c;
 		i++;
