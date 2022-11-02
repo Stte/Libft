@@ -1,5 +1,7 @@
-a.out
+a.out*
 main.c
 *.o
 *.a
 *.pdf
+test.c
+prog
