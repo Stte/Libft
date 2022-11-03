@@ -6,15 +6,35 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:03:13 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/02 18:41:04 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/03 13:07:02 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 int	ft_atoi(const char *str)
 {
-	int		i;
-	long	sign;
-	long	val;
+	int				i;
+	int				sign;
+	unsigned long	val;
 
+	sign = 1;
+	val = 0;
 	i = 0;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+		i++;
+	if (str[i] == '-')
+		sign = -1;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	while (str[i] >= '0' && str[i] <= '9' && str[i] != '\n')
+	{
+		val = val * 10 + (str[i] - '0');
+		if (sign == 1 && val > 9223372036854775807)
+			return (-1);
+		if (sign == -1 && val > 9223372036854775807)
+			return (0);
+		i++;
+	}
+	return ((int)(sign * val));
 }
