@@ -23,3 +23,7 @@ fclean: clean
 	rm -f $(NAME).a
 
 re: fclean all
+
+so:
+	gcc $(FLAGS) -c $(SRCS)
+	gcc -shared -o libft.so *.o

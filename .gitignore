@@ -5,3 +5,4 @@ main.c
 *.pdf
 test.c
 prog
+libft.so
