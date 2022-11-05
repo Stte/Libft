@@ -6,3 +6,6 @@ main.c
 test.c
 prog
 libft.so
+.vscode
+.gitignore
+.gdb*
