@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:53:11 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/03 17:33:47 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/05 22:00:53 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,27 +21,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	s_len = ft_strlen(s);
-	if (start > s_len)
-		return (NULL);
-	if (s_len - start < len)
+	if (start < s_len)
+		sub_len = len;
+	else if (s_len - start < len)
 		sub_len = s_len - start;
 	else
-		sub_len = len;
+		sub_len = 0;
 	ptr = (char *)malloc((sub_len + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
 	ft_strlcpy(ptr, s + start, sub_len + 1);
 	return (ptr);
 }
-
-
-// int main()
-// {
-// 	char *str = "01234";
-// 	size_t size = 10;
-// 	char *ret = ft_substr(str, 10, size);
-
-// 	if (ret)
-// 		;
-// 	return 0;
-// }
