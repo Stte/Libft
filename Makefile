@@ -10,16 +10,26 @@ ft_atoi.c		ft_calloc.c		ft_strdup.c		ft_substr.c		\
 ft_strjoin.c	ft_strtrim.c	ft_split.c		ft_itoa.c		\
 ft_strmapi.c	ft_striteri.c	ft_putchar_fd.c	ft_putstr_fd.c	\
 ft_putendl_fd.c	ft_putnbr_fd.c
+OBJS = \
+ft_bzero.o		ft_isalnum.o	ft_isalpha.o	ft_isascii.o	\
+ft_isdigit.o	ft_isprint.o	ft_memcpy.o		ft_memmove.o	\
+ft_memset.o		ft_strlcpy.o	ft_strlen.o		ft_toupper.o	\
+ft_tolower.o	ft_strchr.o		ft_strrchr.o	ft_strncmp.o	\
+ft_memchr.o		ft_strlcat.o	ft_memcmp.o		ft_strnstr.o	\
+ft_atoi.o		ft_calloc.o		ft_strdup.o		ft_substr.o		\
+ft_strjoin.o	ft_strtrim.o	ft_split.o		ft_itoa.o		\
+ft_strmapi.o	ft_striteri.o	ft_putchar_fd.o	ft_putstr_fd.o	\
+ft_putendl_fd.o	ft_putnbr_fd.o
 
 all: $(NAME)
 
 $(NAME): $(SRCS)
 	cc $(FLAGS) -c $(SRCS)
-	ar rc $(NAME).a *.o
+	ar rc $(NAME).a $(OBJS)
 	ranlib  $(NAME).a
 
 clean:
-	rm -f *.o
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME).a
@@ -28,4 +38,4 @@ re: fclean all
 
 so:
 	gcc $(FLAGS) -c $(SRCS)
-	gcc -shared -o libft.so *.o
+	gcc -shared -o libft.so $(OBJS)
