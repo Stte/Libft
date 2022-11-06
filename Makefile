@@ -20,6 +20,10 @@ ft_atoi.o		ft_calloc.o		ft_strdup.o		ft_substr.o		\
 ft_strjoin.o	ft_strtrim.o	ft_split.o		ft_itoa.o		\
 ft_strmapi.o	ft_striteri.o	ft_putchar_fd.o	ft_putstr_fd.o	\
 ft_putendl_fd.o	ft_putnbr_fd.o
+BNS_SRCS = \
+ft_lstnew_bonus.c
+BNS_OBJS = \
+ft_lstnew_bonus.o
 
 all: $(NAME)
 
@@ -36,6 +40,11 @@ fclean: clean
 
 re: fclean all
 
+bonus: $(BNS_SRCS)
+	cc $(FLAGS) -c $(BNS_SRCS)
+	ar rc $(NAME).a $(BNS_OBJS)
+	ranlib  $(NAME).a
+
 so:
-	gcc $(FLAGS) -c $(SRCS)
-	gcc -shared -o libft.so $(OBJS)
+	gcc $(FLAGS) -c $(SRCS) $(BNS_SRCS)
+	gcc -shared -o libft.so $(OBJS) $(BNS_OBJS)
