@@ -21,9 +21,9 @@ ft_strjoin.o	ft_strtrim.o	ft_split.o		ft_itoa.o		\
 ft_strmapi.o	ft_striteri.o	ft_putchar_fd.o	ft_putstr_fd.o	\
 ft_putendl_fd.o	ft_putnbr_fd.o
 BNS_SRCS = \
-ft_lstnew_bonus.c
+ft_lstnew_bonus.c	ft_lstadd_front_bonus.c
 BNS_OBJS = \
-ft_lstnew_bonus.o
+ft_lstnew_bonus.o	ft_lstadd_front_bonus.o
 
 all: $(NAME)
 
@@ -33,7 +33,7 @@ $(NAME): $(SRCS)
 	ranlib  $(NAME).a
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BNS_OBJS)
 
 fclean: clean
 	rm -f $(NAME).a
