@@ -1,4 +1,4 @@
-NAME = libft
+NAME = libft.a
 FLAGS = -Wall -Werror -Wextra
 SRCS = \
 ft_bzero.c		ft_isalnum.c	ft_isalpha.c	ft_isascii.c	\
@@ -33,22 +33,22 @@ all: $(NAME)
 
 $(NAME): $(SRCS)
 	cc $(FLAGS) -c $(SRCS)
-	ar rc $(NAME).a $(OBJS)
-	ranlib  $(NAME).a
+	ar rc $(NAME) $(OBJS)
+	ranlib  $(NAME)
 
 clean:
 	rm -f $(OBJS) $(BNS_OBJS)
 
 fclean: clean
-	rm -f $(NAME).a
+	rm -f $(NAME)
 
 re: fclean all
 
 bonus: $(BNS_SRCS)
 	cc $(FLAGS) -c $(BNS_SRCS)
-	ar rc $(NAME).a $(BNS_OBJS)
-	ranlib  $(NAME).a
+	ar rc $(NAME) $(BNS_OBJS)
+	ranlib  $(NAME)
 
 so:
 	gcc $(FLAGS) -c $(SRCS) $(BNS_SRCS)
-	gcc -shared -o libft.so $(OBJS) $(BNS_OBJS)
+	gcc -shared -o $(NAME:.a=.so) $(OBJS) $(BNS_OBJS)
