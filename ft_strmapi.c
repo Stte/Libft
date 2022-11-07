@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 23:18:45 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/05 23:47:54 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/07 18:55:39 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	s_len;
 	char	*str;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	s_len = ft_strlen(s);
 	str = (char *)malloc(sizeof(char) + (s_len));

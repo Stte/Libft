@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 14:05:22 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/05 15:48:37 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/07 18:54:18 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start_idx;
 	size_t	end_idx;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 
 	start_idx = 0;
