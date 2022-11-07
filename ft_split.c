@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 15:50:56 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/05 23:12:09 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/07 17:54:12 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_free_all(char **arr)
 {
-	while (arr)
+	while (*arr)
 	{
 		free(*arr);
 		arr++;
@@ -28,6 +28,7 @@ int	ft_split_count(const char *s, char c)
 	int count;
 
 	i = 0;
+	count = 0;
 	while (s[i])
 	{
 		while (s[i] && s[i] == c)
@@ -75,30 +76,13 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	split_count = ft_split_count(s, c);
-	arr = (char **)malloc((split_count + 1) *sizeof(char *));
+	arr = (char **)ft_calloc(split_count + 1, sizeof(char *));
 	if (!arr)
 		return (NULL);
-	arr[split_count + 1] = NULL;
 	if(!ft_splitter(s, c, arr, split_count))
+	{
+		free(arr);
 		return (NULL);
+	}
 	return (arr);
 }
-
-// int	main()
-// {
-// 	char *str = "\0aa\0bbb";
-// 	char c = '\0';
-// 	char	**expected = ft_split(str, c);
-// 	for (int i = 0; expected[i]; i++)
-// 	{
-// 		if (expected[i] != NULL)
-// 			printf("%s", expected[i]);
-// 	}
-// 	// while (result[i])
-// 	// {
-// 	// 	free(result[i]);
-// 	// 	i++;
-// 	// }
-// 	// free(result);
-// 	return (0);
-// }
