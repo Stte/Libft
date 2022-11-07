@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 14:36:04 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/06 15:04:50 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/07 17:39:31 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ void	ft_putnbr_fd(int n, int fd)
 	num = n;
 	if (num < 0)
 		ft_itofd(num * -1, -1, fd);
-	ft_itofd(num, 1, fd);
+	else
+		ft_itofd(num, 1, fd);
 }
