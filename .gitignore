@@ -3,7 +3,6 @@ main.c
 *.o
 *.a
 *.pdf
-test.c
 prog
 libft.so
 .vscode

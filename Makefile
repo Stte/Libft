@@ -28,6 +28,8 @@ BNS_OBJS = \
 ft_lstnew_bonus.o	ft_lstadd_front_bonus.o		ft_lstsize_bonus.o		\
 ft_lstlast_bonus.o	ft_lstadd_back_bonus.o		ft_lstdelone_bonus.o	\
 ft_lstclear_bonus.o	ft_lstiter_bonus.o			ft_lstmap_bonus.o
+TESTS = \
+./test/test.c	./test/unity/unity.c
 
 all: $(NAME)
 
@@ -52,3 +54,7 @@ bonus: $(BNS_SRCS)
 so:
 	gcc $(FLAGS) -c $(SRCS) $(BNS_SRCS)
 	gcc -shared -o $(NAME:.a=.so) $(OBJS) $(BNS_OBJS)
+
+test: all
+	gcc -g $(FLAGS) $(TESTS) -L. -lft
+	./a.out
