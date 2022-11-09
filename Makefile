@@ -50,11 +50,3 @@ bonus: $(BNS_SRCS)
 	cc $(FLAGS) -c $(BNS_SRCS)
 	ar rc $(NAME) $(BNS_OBJS)
 	ranlib  $(NAME)
-
-so:
-	gcc $(FLAGS) -c $(SRCS) $(BNS_SRCS)
-	gcc -shared -o $(NAME:.a=.so) $(OBJS) $(BNS_OBJS)
-
-test: all
-	gcc -g $(FLAGS) $(TESTS) -L. -lft
-	./a.out

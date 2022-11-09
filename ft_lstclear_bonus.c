@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:03:57 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/07 14:13:02 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/09 18:57:23 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
-	if(!lst || !del)
+	if (!lst || !del)
 		return ;
 	tmp = *lst;
 	while (tmp)
