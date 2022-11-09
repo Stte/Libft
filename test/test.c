@@ -22,7 +22,7 @@ void test_ft_isdigit_should_be_false(void) {
 }
 //#endregion
 //#region ft_split
-void test_tf_split_array_each_should_be_equal(void)
+void test_tf_split_should_be_equal(void)
 {
 	char	*string = "  	Is th|is a| real 	...| nah";
 	char	**expected = ((char*[5]){"  	Is th", "is a", " real 	...", " nah", NULL});
@@ -42,7 +42,7 @@ int main(void)
 	RUN_TEST(test_ft_isdigit_should_be_false);
 	//#endregion
 	//#region ft_split
-	RUN_TEST(test_tf_split_array_each_should_be_equal);
+	RUN_TEST(test_tf_split_should_be_equal);
 	//#endregion
 	return UNITY_END();
 }
