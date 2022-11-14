@@ -48,5 +48,5 @@ re: fclean all
 
 bonus: $(BNS_SRCS)
 	cc $(FLAGS) -c $(BNS_SRCS)
-	ar rc $(NAME) $(BNS_OBJS)
+	ar rus $(NAME) $(BNS_OBJS)
 	ranlib  $(NAME)
