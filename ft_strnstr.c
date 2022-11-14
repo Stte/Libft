@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 15:17:40 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/09 20:31:26 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/14 21:17:49 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t		max_idx;
 	char		*haystack_copy;
 
+	if (!haystack)
+		return (NULL);
 	if (*needle == '\0' || !needle || haystack == needle)
 		return ((char *)haystack);
 	if (len == 0)
