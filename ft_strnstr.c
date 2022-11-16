@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 15:17:40 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/15 20:21:02 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/16 13:59:47 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// int main()
-// {
-// 	ft_strnstr("", "agsd", 0);
-// 	return (0);
-// }
