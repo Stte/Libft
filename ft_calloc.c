@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 13:10:14 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/16 18:09:56 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/16 22:20:01 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (!count && !size && (count * size) / count != size)
+	if (!count || !size)
+		return (ft_calloc(1, 1));
+	if ((count * size) / count != size)
 		return (NULL);
 	ptr = malloc(count * size);
 	if (!ptr)
