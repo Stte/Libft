@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:53:11 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/15 21:51:23 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/17 12:30:39 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	s_len = ft_strlen(s);
-	if (start <= ft_min(s_len, len))
+	if (start < s_len)
 		sub_len = ft_min(s_len, len);
 	else
 		sub_len = 0;
