@@ -41,7 +41,6 @@ $(NAME): $(SRCS)
 bonus: $(BNS_SRCS)
 	cc $(FLAGS) -c $(BNS_SRCS)
 	ar rus $(NAME) $(BNS_OBJS)
-	ranlib  $(NAME)
 
 clean:
 	rm -f $(OBJS) $(BNS_OBJS)
@@ -51,4 +50,9 @@ fclean: clean
 
 re: fclean all
 
-
+test:
+	cc $(FLAGS) -g -c $(SRCS)
+	ar rc $(NAME) $(OBJS)
+	ranlib  $(NAME)
+	gcc -g $(FLAGS) $(TESTS) -L. -lft
+	./a.out
