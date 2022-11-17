@@ -50,9 +50,14 @@ fclean: clean
 
 re: fclean all
 
+so:
+	gcc $(FLAGS) -c $(SRCS) $(BNS_SRCS)
+	gcc -shared -o $(NAME:.a=.so) $(OBJS) $(BNS_OBJS)
+
 test:
 	cc $(FLAGS) -g -c $(SRCS)
 	ar rc $(NAME) $(OBJS)
 	ranlib  $(NAME)
 	gcc -g $(FLAGS) $(TESTS) -L. -lft
 	./a.out
+
