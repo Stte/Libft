@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:07:09 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/15 20:40:20 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/24 15:13:04 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	int	slen;
 	int	i;
 
-	slen = ft_strlen(s);
+	slen = ft_strlen((char *)s);
 	i = 0;
 	while (i < slen + 1)
 	{
