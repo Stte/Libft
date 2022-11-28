@@ -8,12 +8,12 @@ GNL_TEST = ./test_gnl.c
 all: libft gnl
 
 libft:
-	gcc -g $(FLAGS) $(SANITIZE) $(TEST) $(LIBFT_TEST) -L.. -lft -o test_libft
-	./test_libft
+	gcc -g $(FLAGS) $(SANITIZE) $(TEST) $(LIBFT_TEST) -L.. -lft -o run_libft
+	./run_libft
 
 gnl:
-	$(CC) $(FLAGS) $(SANITIZE) $(TEST) $(GNL_TEST) -L.. -lft -o test_gnl
-	./test_gnl
+	$(CC) $(FLAGS) $(SANITIZE) $(TEST) $(GNL_TEST) -L.. -lft -o run_gnl
+	./run_gnl
 
-test_clean:
-	rm -f test_libft test_gnl
+clean:
+	rm -f run_libft run_gnl
