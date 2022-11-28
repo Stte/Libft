@@ -26,7 +26,11 @@ void test_tf_split_should_be_equal(void)
 {
 	char	*string = "  	Is th|is a| real 	...| nah";
 	char	**expected = ((char*[5]){"  	Is th", "is a", " real 	...", " nah", NULL});
-	TEST_ASSERT_EQUAL_STRING_ARRAY(expected, ft_split(string, '|'), 5);
+	char	**actual = ft_split(string, '|');
+	TEST_ASSERT_EQUAL_STRING_ARRAY(expected, actual, 5);
+	for (int i = 0; i < 5; i++)
+		free(actual[i]);
+	free(actual);
 }
 //#endregion
 
