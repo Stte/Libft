@@ -8,7 +8,7 @@ GNL_TEST = ./test_gnl.c
 all: libft gnl
 
 libft:
-	gcc -g $(FLAGS) $(SANITIZE) $(TEST) $(LIBFT_TEST) -L.. -lft -o run_libft
+	gcc $(FLAGS) $(SANITIZE) $(TEST) $(LIBFT_TEST) -L.. -lft -o run_libft
 	./run_libft
 
 gnl:
