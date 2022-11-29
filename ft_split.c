@@ -6,13 +6,13 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 15:50:56 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/09 18:58:18 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/29 14:57:27 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_free_all(char **arr)
+static int	ft_free_all(char **arr)
 {
 	while (*arr)
 	{
@@ -22,7 +22,7 @@ int	ft_free_all(char **arr)
 	return (0);
 }
 
-int	ft_split_count(const char *s, char c)
+static int	ft_split_count(const char *s, char c)
 {
 	int	i;
 	int	count;
@@ -41,7 +41,7 @@ int	ft_split_count(const char *s, char c)
 	return (count);
 }
 
-int	ft_splitter(char const *s, char c, char **arr, int split_count)
+static int	ft_splitter(char const *s, char c, char **arr, int split_count)
 {
 	int		i;
 	int		i_prev;

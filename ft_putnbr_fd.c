@@ -6,13 +6,13 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 14:36:04 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/07 17:39:31 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/29 14:57:03 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_itofd(long num, int sign, int fd)
+static void	ft_itofd(long num, int sign, int fd)
 {
 	if (num >= 10)
 	{

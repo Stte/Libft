@@ -6,13 +6,13 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:53:11 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/17 12:30:39 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/29 14:58:35 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_min(size_t a, size_t b)
+static size_t	ft_min(size_t a, size_t b)
 {
 	if (a < b)
 		return (a);
