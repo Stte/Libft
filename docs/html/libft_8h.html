@@ -171,6 +171,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a60352c5b39fab08469b3e28131a79e25"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libft_8h.html#a60352c5b39fab08469b3e28131a79e25">ft_strtrim</a> (char const *s1, char const *set)</td></tr>
 <tr class="separator:a60352c5b39fab08469b3e28131a79e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65c9de65051c8c589286cf133c4a1f4"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libft_8h.html#aa65c9de65051c8c589286cf133c4a1f4">ft_split</a> (char const *s, char c)</td></tr>
+<tr class="memdesc:aa65c9de65051c8c589286cf133c4a1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits string to substrings.  <a href="libft_8h.html#aa65c9de65051c8c589286cf133c4a1f4">More...</a><br /></td></tr>
 <tr class="separator:aa65c9de65051c8c589286cf133c4a1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a6ea3765dfd826eabfc00d36e28ea38"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libft_8h.html#a8a6ea3765dfd826eabfc00d36e28ea38">ft_itoa</a> (int n)</td></tr>
 <tr class="separator:a8a6ea3765dfd826eabfc00d36e28ea38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,8 +325,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the allocated memory </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Allocates memory </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ft__calloc_8c_source.html#l00022">22</a> of file <a class="el" href="ft__calloc_8c_source.html">ft_calloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ft__calloc_8c_source.html#l00023">23</a> of file <a class="el" href="ft__calloc_8c_source.html">ft_calloc.c</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1032,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ft__split_8c_source.html#l00071">71</a> of file <a class="el" href="ft__split_8c_source.html">ft_split.c</a>.</p>
+<p>Splits string to substrings. </p>
+<p >Splits string <b>s</b> by character <b>c</b> to substrings. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>String </td></tr>
+    <tr><td class="paramname">c</td><td>Character </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of substrings </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Allocates memory </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ft__split_8c_source.html#l00080">80</a> of file <a class="el" href="ft__split_8c_source.html">ft_split.c</a>.</p>
 
 </div>
 </div>

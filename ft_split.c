@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 15:50:56 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/29 14:57:27 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/29 15:42:36 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,15 @@ static int	ft_splitter(char const *s, char c, char **arr, int split_count)
 	return (1);
 }
 
+/**
+ * @brief Splits string to substrings.
+ *
+ * Splits string \b s by character \b c to substrings.
+ * @param s String
+ * @param c Character
+ * @returns Array of substrings
+ * @attention Allocates memory
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;

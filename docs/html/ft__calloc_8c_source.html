@@ -100,27 +100,27 @@ $(document).ready(function(){initNavTree('ft__calloc_8c_source.html',''); initRe
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/*   By: tspoof &lt;tspoof@student.hive.fi&gt;            +#+  +:+       +#+        */</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/*                                                +#+#+#+#+#+   +#+           */</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/*   Created: 2022/11/03 13:10:14 by tspoof            #+#    #+#             */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*   Updated: 2022/11/29 14:37:39 by tspoof           ###   ########.fr       */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*   Updated: 2022/11/29 15:33:34 by tspoof           ###   ########.fr       */</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*                                                                            */</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/* ************************************************************************** */</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="libft_8h.html">libft.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">   22</a></span><span class="keywordtype">void</span>    *<a class="code hl_function" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a>(<span class="keywordtype">size_t</span> count, <span class="keywordtype">size_t</span> size)</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span>    *ptr;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (!count || !size)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> (<a class="code hl_function" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a>(1, 1));</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span> ((count * size) / count != size)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> (NULL);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ptr = malloc(count * size);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">if</span> (!ptr)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> (NULL);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="ft__bzero_8c.html#a5937ab0d08e31d0e3e4a16ec71e293a1">ft_bzero</a>(ptr, count * size);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> (ptr);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">   23</a></span><span class="keywordtype">void</span>    *<a class="code hl_function" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a>(<span class="keywordtype">size_t</span> count, <span class="keywordtype">size_t</span> size)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span>    *ptr;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (!count || !size)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">return</span> (<a class="code hl_function" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a>(1, 1));</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> ((count * size) / count != size)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">return</span> (NULL);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ptr = malloc(count * size);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (!ptr)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> (NULL);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="ft__bzero_8c.html#a5937ab0d08e31d0e3e4a16ec71e293a1">ft_bzero</a>(ptr, count * size);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> (ptr);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="ttc" id="aft__bzero_8c_html_a5937ab0d08e31d0e3e4a16ec71e293a1"><div class="ttname"><a href="ft__bzero_8c.html#a5937ab0d08e31d0e3e4a16ec71e293a1">ft_bzero</a></div><div class="ttdeci">void ft_bzero(void *s, size_t n)</div><div class="ttdoc">Zero a byte string.</div><div class="ttdef"><b>Definition:</b> <a href="ft__bzero_8c_source.html#l00023">ft_bzero.c:23</a></div></div>
-<div class="ttc" id="aft__calloc_8c_html_ae0a6807f9f78ed4bf4f958323582d22f"><div class="ttname"><a href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a></div><div class="ttdeci">void * ft_calloc(size_t count, size_t size)</div><div class="ttdoc">Allocate and free dynamic memory.</div><div class="ttdef"><b>Definition:</b> <a href="ft__calloc_8c_source.html#l00022">ft_calloc.c:22</a></div></div>
+<div class="ttc" id="aft__calloc_8c_html_ae0a6807f9f78ed4bf4f958323582d22f"><div class="ttname"><a href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a></div><div class="ttdeci">void * ft_calloc(size_t count, size_t size)</div><div class="ttdoc">Allocate and free dynamic memory.</div><div class="ttdef"><b>Definition:</b> <a href="ft__calloc_8c_source.html#l00023">ft_calloc.c:23</a></div></div>
 <div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="libft_8h.html">libft.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

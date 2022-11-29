@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('ft__split_8c_source.html',''); initRes
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/*   By: tspoof &lt;tspoof@student.hive.fi&gt;            +#+  +:+       +#+        */</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/*                                                +#+#+#+#+#+   +#+           */</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/*   Created: 2022/11/05 15:50:56 by tspoof            #+#    #+#             */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*   Updated: 2022/11/29 14:57:27 by tspoof           ###   ########.fr       */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*   Updated: 2022/11/29 15:42:36 by tspoof           ###   ########.fr       */</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*                                                                            */</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/* ************************************************************************** */</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -162,26 +162,26 @@ $(document).ready(function(){initNavTree('ft__split_8c_source.html',''); initRes
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> (1);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="ft__split_8c.html#aa65c9de65051c8c589286cf133c4a1f4">   71</a></span><span class="keywordtype">char</span>    **<a class="code hl_function" href="ft__split_8c.html#aa65c9de65051c8c589286cf133c4a1f4">ft_split</a>(<span class="keywordtype">char</span> <span class="keyword">const</span> *s, <span class="keywordtype">char</span> c)</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">char</span>    **arr;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">int</span>     split_count;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span> (!s)</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> (NULL);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    split_count = ft_split_count(s, c);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    arr = (<span class="keywordtype">char</span> **)<a class="code hl_function" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a>(split_count + 1, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span> (!arr)</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">return</span> (NULL);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">if</span> (!ft_splitter(s, c, arr, split_count))</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        free(arr);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> (NULL);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> (arr);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
-<div class="ttc" id="aft__calloc_8c_html_ae0a6807f9f78ed4bf4f958323582d22f"><div class="ttname"><a href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a></div><div class="ttdeci">void * ft_calloc(size_t count, size_t size)</div><div class="ttdoc">Allocate and free dynamic memory.</div><div class="ttdef"><b>Definition:</b> <a href="ft__calloc_8c_source.html#l00022">ft_calloc.c:22</a></div></div>
-<div class="ttc" id="aft__split_8c_html_aa65c9de65051c8c589286cf133c4a1f4"><div class="ttname"><a href="ft__split_8c.html#aa65c9de65051c8c589286cf133c4a1f4">ft_split</a></div><div class="ttdeci">char ** ft_split(char const *s, char c)</div><div class="ttdef"><b>Definition:</b> <a href="ft__split_8c_source.html#l00071">ft_split.c:71</a></div></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="ft__split_8c.html#aa65c9de65051c8c589286cf133c4a1f4">   80</a></span><span class="keywordtype">char</span>    **<a class="code hl_function" href="ft__split_8c.html#aa65c9de65051c8c589286cf133c4a1f4">ft_split</a>(<span class="keywordtype">char</span> <span class="keyword">const</span> *s, <span class="keywordtype">char</span> c)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">char</span>    **arr;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">int</span>     split_count;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (!s)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> (NULL);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    split_count = ft_split_count(s, c);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    arr = (<span class="keywordtype">char</span> **)<a class="code hl_function" href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a>(split_count + 1, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!arr)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> (NULL);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">if</span> (!ft_splitter(s, c, arr, split_count))</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        free(arr);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> (NULL);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> (arr);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="ttc" id="aft__calloc_8c_html_ae0a6807f9f78ed4bf4f958323582d22f"><div class="ttname"><a href="ft__calloc_8c.html#ae0a6807f9f78ed4bf4f958323582d22f">ft_calloc</a></div><div class="ttdeci">void * ft_calloc(size_t count, size_t size)</div><div class="ttdoc">Allocate and free dynamic memory.</div><div class="ttdef"><b>Definition:</b> <a href="ft__calloc_8c_source.html#l00023">ft_calloc.c:23</a></div></div>
+<div class="ttc" id="aft__split_8c_html_aa65c9de65051c8c589286cf133c4a1f4"><div class="ttname"><a href="ft__split_8c.html#aa65c9de65051c8c589286cf133c4a1f4">ft_split</a></div><div class="ttdeci">char ** ft_split(char const *s, char c)</div><div class="ttdoc">Splits string to substrings.</div><div class="ttdef"><b>Definition:</b> <a href="ft__split_8c_source.html#l00080">ft_split.c:80</a></div></div>
 <div class="ttc" id="aft__strlcpy_8c_html_a12f759eb9793cf306fede66d0b7de0fc"><div class="ttname"><a href="ft__strlcpy_8c.html#a12f759eb9793cf306fede66d0b7de0fc">ft_strlcpy</a></div><div class="ttdeci">size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)</div><div class="ttdef"><b>Definition:</b> <a href="ft__strlcpy_8c_source.html#l00015">ft_strlcpy.c:15</a></div></div>
 <div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="libft_8h.html">libft.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
