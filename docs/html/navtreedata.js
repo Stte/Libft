@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "libft", "index.html", [
+    [ "libft", "md__home_stte_Documents_HIVE_libft_README.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],

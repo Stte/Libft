@@ -6,19 +6,12 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:03:13 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/29 14:27:54 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/11/30 16:45:21 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief ASCII to integer.
- *
- * Returns integer from number string.
- * @param str Number as a string
- * @return Number as a integer
- */
 int	ft_atoi(const char *str)
 {
 	int				i;
