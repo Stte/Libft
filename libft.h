@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:09:24 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/02 17:28:33 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/02 23:32:37 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ typedef struct s_list
  *
  * Returns integer from number string.
  * @param str Number as a string
- * @return Number as a integer
+ * @return int Number as a integer
  */
 int		ft_atoi(const char *str);
 /**
@@ -46,7 +46,7 @@ void	ft_bzero(void *s, size_t n);
  * Allocates memory and sets every byte to 0.
  * @param count How many elements
  * @param size Size of a element (eg. 4 bytes)
- * @returns Pointer to the allocated memory
+ * @return void* Pointer to the allocated memory
  * @attention Allocates memory
  */
 void	*ft_calloc(size_t count, size_t size);
@@ -55,19 +55,43 @@ void	*ft_calloc(size_t count, size_t size);
  *
  * Checks if character is an alphabet or a number.
  * @param c Character as an ASCII desimal
- * @returns 1 if true, 0 if false
+ * @return int 1 if true, 0 if false
  */
 int		ft_isalnum(int c);
+/**
+ * @brief Check if char is alphabet
+ *
+ * @param c
+ * @return int
+ */
 int		ft_isalpha(int c);
+/**
+ * @brief Check if char is ASCII
+ *
+ * @param c
+ * @return int
+ */
 int		ft_isascii(int c);
+/**
+ * @brief Check if char is digit
+ *
+ * @param c
+ * @return int
+ */
 int		ft_isdigit(int c);
+/**
+ * @brief Check if char is printable
+ *
+ * @param c
+ * @return int
+ */
 int		ft_isprint(int c);
 /**
  * @brief Integer to ASCII.
  *
  * Returns a number as a string.
  * @param n Number
- * @returns Number \b n as a string
+ * @return char* Number \b n as a string
  * @attention Allocates memory
  */
 char	*ft_itoa(int n);
@@ -79,7 +103,7 @@ char	*ft_itoa(int n);
  * @param s Starting address
  * @param c Character to find
  * @param n Till how many bytes from the starting address \b s
- * @returns Address of the found character or a NULL if character not found
+ * @return void* Address of the found character or a NULL if character not found
  */
 void	*ft_memchr(const void *s, int c, size_t n);
 /**
@@ -90,7 +114,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
  * @param s2 Second address
  * @param n Number of bytes
 
- * @returns If \b s1 and \b s2 are equal returns 0.
+ * @return int If \b s1 and \b s2 are equal returns 0.
  * Else returns difference of the byte that was not equal.
  */
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -100,7 +124,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
  * Copies \b n bytes of memory from source to destination.
  * @param dst Address of the destination
  * @param src Address of the source
- * @returns Address of destination
+ * @return void* Address of destination
  * @attention Does not handle overlapping.
  */
 void	*ft_memcpy(void *dst, const void *src, size_t n);
@@ -111,7 +135,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
  * @param dst Address of the destination
  * @param src Address of the source
  * @param len Number of bytes
- * @returns Address of the destination
+ * @return void* Address of the destination
  */
 void	*ft_memmove(void *dst, const void *src, size_t len);
 /**
@@ -121,12 +145,36 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
  * @param b Memory address
  * @param c Value to set the bytes to
  * @param len Number of bytes
- * @returns Address of \b b
+ * @return void* Address of \b b
  */
 void	*ft_memset(void *b, int c, int len);
+/**
+ * @brief Writes char to file
+ *
+ * @param c
+ * @param fd
+ */
 void	ft_putchar_fd(char c, int fd);
+/**
+ * @brief Writes new line to file
+ *
+ * @param s
+ * @param fd
+ */
 void	ft_putendl_fd(char *s, int fd);
+/**
+ * @brief Writes number to file
+ *
+ * @param n
+ * @param fd
+ */
 void	ft_putnbr_fd(int n, int fd);
+/**
+ * @brief Writes string to file
+ *
+ * @param s
+ * @param fd
+ */
 void	ft_putstr_fd(char *s, int fd);
 /**
  * @brief Splits string to substrings.
@@ -134,7 +182,7 @@ void	ft_putstr_fd(char *s, int fd);
  * Splits string \b s by character \b c to substrings.
  * @param s String
  * @param c Character
- * @returns Array of substrings
+ * @return char** Array of substrings
  * @attention Allocates memory
  */
 char	**ft_split(char const *s, char c);
