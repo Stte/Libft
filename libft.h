@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:09:24 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/30 17:08:54 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/02 17:28:33 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,9 +138,25 @@ void	ft_putstr_fd(char *s, int fd);
  * @attention Allocates memory
  */
 char	**ft_split(char const *s, char c);
+/**
+ * @brief Search a character.
+ *
+ * Searches a character from a string and returns it's address.
+ * @param s String
+ * @param c Character
+ * @return char* Address of the found character or NULL if not found
+ */
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+/**
+ * @brief Joins two strings together.
+ *
+ * @param s1 String 1
+ * @param s2 Strong 2
+ * @return char* New string containing \b s1 and \b s2
+ * @attention Allocates memory
+ */
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
@@ -150,6 +166,16 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
+/**
+ * @brief Gets a piece of string out of a string.
+ *
+ * Gets \b len length piece of string from a strung starting at index \b start.
+ * @param s String
+ * @param start Starting index
+ * @param len How many chars
+ * @return char* Address of the new substring
+ * @attention Allocates memory
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
