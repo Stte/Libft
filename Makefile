@@ -30,5 +30,5 @@ fclean: clean
 re: fclean all
 
 so:
-	gcc $(FLAGS) -c $(SRCS)
+	gcc $(FLAGS) -fPIC -c $(SRCS)
 	gcc -shared -o $(NAME:.a=.so) $(OBJS)
