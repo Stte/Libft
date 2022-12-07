@@ -6,15 +6,15 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 15:17:40 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/03 00:14:58 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/08 00:53:31 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
 // First checks if needles first char matches with a char in haystack.
-// Then compares needles and haystacks characters one by one from that point froward.
+// Then compares needles and haystacks characters one by one
+// from that point froward.
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t		i;
