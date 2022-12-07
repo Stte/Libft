@@ -116,5 +116,5 @@ char	*get_next_line(int fd)
 		return (NULL);
 	}
 	line = gnl_line(read_return, &fd_list[fd]);
-	return (line);
+	return (NULL);
 }
