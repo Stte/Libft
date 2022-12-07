@@ -14,7 +14,7 @@ void	test_threelines_should_be_equal(void)
 	char	*expected;
 	char	*actual;
 
-	expected = "Process 34258 launched:\n ";
+	expected = "Process 34258 launched:\n";
 	actual = get_next_line(fd);
 	TEST_ASSERT_EQUAL_STRING(expected, actual);
 	free(actual);
