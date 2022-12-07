@@ -1,0 +1,24 @@
+name: Norminette
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: make library
+      run: make
+    - name: make test
+      run: make -C ./test/
+
+    - name: Install norminette
+      run: python3 -m pip install norminette
+    - name: Run norminette
+      run: norminette *.c *.h
