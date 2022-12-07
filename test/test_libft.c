@@ -15,7 +15,7 @@ void test_ft_atoi_should_be_equal_int(void) {
 
 //#region ft_isdigit
 void test_ft_isdigit_should_be_true(void) {
-	TEST_ASSERT_TRUE(ft_isdigit('a'));
+	TEST_ASSERT_TRUE(ft_isdigit('1'));
 }
 void test_ft_isdigit_should_be_false(void) {
 	TEST_ASSERT_FALSE(ft_isdigit('a'));
