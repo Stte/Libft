@@ -4,4 +4,4 @@
 
 
 **Documentation**
-https://stte.github.io/libft/html/
+https://stte.github.io/libft
