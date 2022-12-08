@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:09:24 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/08 17:25:44 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/08 17:57:57 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -317,7 +317,9 @@ size_t	ft_strlen(const char *s);
 /**
  * @brief Create a copy of a string passing each char through a function.
  *
- * Creates a new string and assigns the values to that string by taking a character from the string \b s and passing it trough the function \b f.
+ * Creates a new string and assigns the values to that string by
+ * taking a character from the string \b s
+ * and passing it trough the function \b f.
  * Function \b f takes a character and index of that character as parameters.
  *
  * @param s String
@@ -329,7 +331,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 /**
  * @brief String compare.
  *
- * Compares two strings and returns the difference of the first missmatch character or 0 if strings are equal.
+ * Compares two strings and returns the difference of the first missmatch
+ * character or 0 if strings are equal.
  *
  * @param s1 String
  * @param s2 String
@@ -340,7 +343,8 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 /**
  * @brief Search string from string.
  *
- * Searches string from a string and returns the address of the start of the found string.
+ * Searches string from a string and returns
+ * the address of the start of the found string.
  *
  * @param haystack String
  * @param needle String

@@ -3,3 +3,4 @@
 *.a
 run_*
 a.out
+*.so
