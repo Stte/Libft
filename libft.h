@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:09:24 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/03 00:27:48 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/08 17:25:44 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,71 @@ int		ft_isprint(int c);
  * @attention Allocates memory
  */
 char	*ft_itoa(int n);
+/**
+ * @brief List add back.
+ *
+ * @param lst
+ * @param new
+ */
+void	ft_lstadd_back(t_list **lst, t_list *new);
+/**
+ * @brief List add front.
+ *
+ * @param lst
+ * @param new
+ */
+void	ft_lstadd_front(t_list **lst, t_list *new);
+/**
+ * @brief Clear list.
+ *
+ * @param lst
+ * @param del
+ */
+void	ft_lstclear(t_list **lst, void (*del)(void *));
+/**
+ * @brief Delete node.
+ *
+ * @param lst
+ * @param del
+ */
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
+/**
+ * @brief Iterate list.
+ *
+ * @param lst
+ * @param f
+ */
+void	ft_lstiter(t_list *lst, void (*f)(void *));
+/**
+ * @brief Last node in a list.
+ *
+ * @param lst
+ * @return t_list*
+ */
+t_list	*ft_lstlast(t_list *lst);
+/**
+ * @brief List map.
+ *
+ * @param lst
+ * @param f
+ * @param del
+ * @return t_list*
+ */
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+/**
+ * @brief Create a new node.
+ *
+ * @param content
+ * @return t_list*
+ */
+t_list	*ft_lstnew(void *content);
+/**
+ * @brief Size of a list.
+ *
+ * @param lst
+ * @return int
+ */
+int		ft_lstsize(t_list *lst);
 /**
  * @brief Scan memory for a character.
  *
@@ -330,69 +395,12 @@ int		ft_tolower(int c);
  */
 int		ft_toupper(int c);
 /**
- * @brief List add back.
+ * @brief Unsigned long to lowercase hexadesimal string.
  *
- * @param lst
- * @param new
+ * @param n unsigned long
+ * @return char* hexadesimal string in lowercase
+ * @attention Allocates memory
  */
-void	ft_lstadd_back(t_list **lst, t_list *new);
-/**
- * @brief List add front.
- *
- * @param lst
- * @param new
- */
-void	ft_lstadd_front(t_list **lst, t_list *new);
-/**
- * @brief Clear list.
- *
- * @param lst
- * @param del
- */
-void	ft_lstclear(t_list **lst, void (*del)(void *));
-/**
- * @brief Delete node.
- *
- * @param lst
- * @param del
- */
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
-/**
- * @brief Iterate list.
- *
- * @param lst
- * @param f
- */
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-/**
- * @brief Last node in a list.
- *
- * @param lst
- * @return t_list*
- */
-t_list	*ft_lstlast(t_list *lst);
-/**
- * @brief List map.
- *
- * @param lst
- * @param f
- * @param del
- * @return t_list*
- */
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-/**
- * @brief Create a new node.
- *
- * @param content
- * @return t_list*
- */
-t_list	*ft_lstnew(void *content);
-/**
- * @brief Size of a list.
- *
- * @param lst
- * @return int
- */
-int		ft_lstsize(t_list *lst);
+char	*ft_ulongtohex(unsigned long n);
 
 #endif
