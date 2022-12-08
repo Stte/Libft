@@ -42,5 +42,6 @@ var searchData=
   ['ft_5fstrtrim_2ec_39',['ft_strtrim.c',['../ft__strtrim_8c.html',1,'']]],
   ['ft_5fsubstr_2ec_40',['ft_substr.c',['../ft__substr_8c.html',1,'']]],
   ['ft_5ftolower_2ec_41',['ft_tolower.c',['../ft__tolower_8c.html',1,'']]],
-  ['ft_5ftoupper_2ec_42',['ft_toupper.c',['../ft__toupper_8c.html',1,'']]]
+  ['ft_5ftoupper_2ec_42',['ft_toupper.c',['../ft__toupper_8c.html',1,'']]],
+  ['ft_5fulongtohex_2ec_43',['ft_ulongtohex.c',['../ft__ulongtohex_8c.html',1,'']]]
 ];

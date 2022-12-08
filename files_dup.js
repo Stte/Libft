@@ -43,6 +43,7 @@ var files_dup =
     [ "ft_substr.c", "ft__substr_8c.html", "ft__substr_8c" ],
     [ "ft_tolower.c", "ft__tolower_8c.html", "ft__tolower_8c" ],
     [ "ft_toupper.c", "ft__toupper_8c.html", "ft__toupper_8c" ],
+    [ "ft_ulongtohex.c", "ft__ulongtohex_8c.html", "ft__ulongtohex_8c" ],
     [ "get_next_line.c", "get__next__line_8c.html", "get__next__line_8c" ],
     [ "get_next_line.h", "get__next__line_8h.html", "get__next__line_8h" ],
     [ "libft.h", "libft_8h.html", "libft_8h" ]

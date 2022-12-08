@@ -44,5 +44,6 @@ var libft_8h =
     [ "ft_strtrim", "libft_8h.html#a60352c5b39fab08469b3e28131a79e25", null ],
     [ "ft_substr", "libft_8h.html#a78c402cbf3d55b1374693c3b7d34f71d", null ],
     [ "ft_tolower", "libft_8h.html#ab86e5297914753b6c82d7e3c3020ce17", null ],
-    [ "ft_toupper", "libft_8h.html#aef116be7b5bceafff4b59f20a4433d12", null ]
+    [ "ft_toupper", "libft_8h.html#aef116be7b5bceafff4b59f20a4433d12", null ],
+    [ "ft_ulongtohex", "libft_8h.html#a0379c1c46f59025818491ba175f6ad47", null ]
 ];
