@@ -3,8 +3,6 @@ name: Norminette
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
 
 jobs:
   build:
@@ -13,11 +11,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: make library
-      run: make
-    - name: make test
-      run: make -C ./test/
-
     - name: Install norminette
       run: python3 -m pip install norminette
     - name: Run norminette
