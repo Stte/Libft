@@ -21,4 +21,4 @@ ulongtohex:
 	./run_ulongtohex
 
 clean:
-	rm -f run_libft run_gnl run_ulongtohex
+	rm -fr run_libft* run_gnl* run_ulongtohex*
