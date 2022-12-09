@@ -20,6 +20,7 @@ var libft_8h =
     [ "ft_lstmap", "libft_8h.html#a8198d1837ffbba05823f5e85afebf9c6", null ],
     [ "ft_lstnew", "libft_8h.html#a8fe4ea6f56f5a2a75ee13d97416b60ed", null ],
     [ "ft_lstsize", "libft_8h.html#a9da614988ac99446db9df99d2c773fc1", null ],
+    [ "ft_ltoa", "libft_8h.html#a9c7ca392832da91098199a661fa9527d", null ],
     [ "ft_memchr", "libft_8h.html#abf633e8e48a8afbe61947f61de5ac695", null ],
     [ "ft_memcmp", "libft_8h.html#a08f665a1828c402f2ffe2e2187f135fc", null ],
     [ "ft_memcpy", "libft_8h.html#a5f5c5d19b1f0355d9768c75d30ed5559", null ],

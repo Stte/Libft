@@ -18,6 +18,7 @@ var files_dup =
     [ "ft_lstmap.c", "ft__lstmap_8c.html", "ft__lstmap_8c" ],
     [ "ft_lstnew.c", "ft__lstnew_8c.html", "ft__lstnew_8c" ],
     [ "ft_lstsize.c", "ft__lstsize_8c.html", "ft__lstsize_8c" ],
+    [ "ft_ltoa.c", "ft__ltoa_8c.html", "ft__ltoa_8c" ],
     [ "ft_memchr.c", "ft__memchr_8c.html", "ft__memchr_8c" ],
     [ "ft_memcmp.c", "ft__memcmp_8c.html", "ft__memcmp_8c" ],
     [ "ft_memcpy.c", "ft__memcpy_8c.html", "ft__memcpy_8c" ],
