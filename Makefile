@@ -12,15 +12,14 @@ ft_strmapi.c	ft_striteri.c	ft_putchar_fd.c		ft_putstr_fd.c		\
 ft_putendl_fd.c	ft_putnbr_fd.c	ft_lstnew.c			ft_lstadd_front.c	\
 ft_lstsize.c	ft_lstlast.c	ft_lstadd_back.c	ft_lstdelone.c		\
 ft_lstclear.c	ft_lstiter.c	ft_lstmap.c			get_next_line.c		\
-ft_ulongtohex.c
+ft_ulongtohex.c	ft_ltoa.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(SRCS)
 	cc $(FLAGS) -c $(SRCS)
-	ar rc $(NAME) $(OBJS)
-	ranlib  $(NAME)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)
@@ -33,3 +32,8 @@ re: fclean all
 so:
 	gcc $(FLAGS) -fPIC -c $(SRCS)
 	gcc -shared -o $(NAME:.a=.so) $(OBJS)
+
+debug:
+	cc $(FLAGS) -g -c $(SRCS)
+	ar rcs $(NAME) $(OBJS)
+
