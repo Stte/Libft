@@ -6,15 +6,15 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 22:48:26 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/15 14:49:39 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/15 15:14:46 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
-#include "libft.h"
-
 #ifndef VEC_H
 # define VEC_H
+
+# include "unistd.h"
+# include "libft.h"
 
 typedef struct s_vec
 {
@@ -23,7 +23,6 @@ typedef struct s_vec
 	size_t			alloc_size;
 	size_t			len;
 }	t_vec;
-
 /**
  * @brief Appends memory to a vector.
  *
@@ -91,6 +90,5 @@ int		vec_push(t_vec *dst, void *src);
  * @return int -1 if malloc fails otherwise 1
  */
 int		vec_resize(t_vec *src, size_t target_len);
-
 
 #endif
