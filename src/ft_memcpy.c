@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:14:46 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/30 17:06:37 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/15 18:48:32 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		i = 0;
 		while (i < n)
 		{
-			((char *)dst)[i] = ((char *)src)[i];
+			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
 	}
