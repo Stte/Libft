@@ -1,4 +1,4 @@
-FLAGS = -Wall -Werror -Wextra -g
+FLAGS = -Wall -Werror -Wextra -g -I../inc
 BUFFER_SIZE = -D BUFFER_SIZE=42
 SANITIZE = -fsanitize=address
 TEST = ./unity/unity.c
@@ -11,7 +11,7 @@ all: build libft gnl ulongtohex ltoa
 
 
 build:
-	make debug -C ../
+	make -C ..
 
 libft:
 	gcc $(FLAGS) $(SANITIZE) $(TEST) $(LIBFT_TEST) -L.. -lft -o run_libft

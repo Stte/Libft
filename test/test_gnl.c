@@ -1,5 +1,5 @@
 #include "unity/unity.h"
-#include "../get_next_line.h"
+#include "get_next_line.h"
 #include <fcntl.h>
 
 void setUp(void) {

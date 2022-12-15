@@ -1,5 +1,5 @@
 #include "unity/unity.h"
-#include "../libft.h"
+#include "libft.h"
 
 void setUp(void) {
 }
