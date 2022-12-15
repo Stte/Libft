@@ -9,7 +9,6 @@ LTOA_TEST = ./test_ft_ltoa.c
 
 all: build libft gnl ulongtohex ltoa
 
-
 build:
 	make -C ..
 
@@ -29,9 +28,9 @@ ltoa:
 	$(CC) $(FLAGS) $(SANITIZE) $(TEST) $(LTOA_TEST) -L.. -lft -o run_ltoa
 	./run_ltoa
 
-test:
-	$(CC) $(FLAGS) $(SANITIZE) main.c -L.. -lft -o run_test
-	./run_test
+playground:
+	$(CC) $(FLAGS) $(SANITIZE) playground.c -L.. -lft -o run_playground
+	./run_playground
 
 clean:
-	rm -fr run_libft* run_gnl* run_ulongtohex* run_ltoa* run_test*
+	rm -fr run_*
