@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 22:48:37 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/15 15:11:09 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/15 18:55:43 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	vec_append(t_vec *dst, t_vec *src)
 		return (-1);
 	ft_memcpy(&dst->memory[dst->elem_size * dst->len],
 		src->memory,
-		src->len * src->alloc_size);
+		src->len * src->elem_size);
 	dst->len = dst->len + src->len;
 	return (1);
 }
