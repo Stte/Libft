@@ -1,5 +1,5 @@
 .vscode
-*.o
+obj
 *.a
 run_*
 a.out

@@ -1,39 +1,57 @@
-NAME = libft.a
-FLAGS = -Wall -Werror -Wextra
-SRCS = \
-ft_bzero.c		ft_isalnum.c	ft_isalpha.c		ft_isascii.c		\
-ft_isdigit.c	ft_isprint.c	ft_memcpy.c			ft_memmove.c		\
-ft_memset.c		ft_strlcpy.c	ft_strlen.c			ft_toupper.c		\
-ft_tolower.c	ft_strchr.c		ft_strrchr.c		ft_strncmp.c		\
-ft_memchr.c		ft_strlcat.c	ft_memcmp.c			ft_strnstr.c		\
-ft_atoi.c		ft_calloc.c		ft_strdup.c			ft_substr.c			\
-ft_strjoin.c	ft_strtrim.c	ft_split.c			ft_itoa.c			\
-ft_strmapi.c	ft_striteri.c	ft_putchar_fd.c		ft_putstr_fd.c		\
-ft_putendl_fd.c	ft_putnbr_fd.c	ft_lstnew.c			ft_lstadd_front.c	\
-ft_lstsize.c	ft_lstlast.c	ft_lstadd_back.c	ft_lstdelone.c		\
-ft_lstclear.c	ft_lstiter.c	ft_lstmap.c			get_next_line.c		\
-ft_ulongtohex.c	ft_ltoa.c
-OBJS = $(SRCS:.c=.o)
+NAME 		= libft.a
+
+S			= src/
+O			= obj/
+I			= inc/
+
+CC			= cc
+CFLAGS		= -Wall -Werror -Wextra -c -I$I
+
+AR			= ar
+ARFLAGS		= rcs
+
+SRC = \
+$S/ft_bzero.c		$S/ft_isalnum.c		$S/ft_isalpha.c			$S/ft_isascii.c			\
+$S/ft_isdigit.c		$S/ft_isprint.c		$S/ft_memcpy.c			$S/ft_memmove.c			\
+$S/ft_memset.c		$S/ft_strlcpy.c		$S/ft_strlen.c			$S/ft_toupper.c			\
+$S/ft_tolower.c		$S/ft_strchr.c		$S/ft_strrchr.c			$S/ft_strncmp.c			\
+$S/ft_memchr.c		$S/ft_strlcat.c		$S/ft_memcmp.c			$S/ft_strnstr.c			\
+$S/ft_atoi.c		$S/ft_calloc.c		$S/ft_strdup.c			$S/ft_substr.c			\
+$S/ft_strjoin.c		$S/ft_strtrim.c		$S/ft_split.c			$S/ft_itoa.c			\
+$S/ft_strmapi.c		$S/ft_striteri.c	$S/ft_putchar_fd.c		$S/ft_putstr_fd.c		\
+$S/ft_putendl_fd.c	$S/ft_putnbr_fd.c	$S/ft_lstnew.c			$S/ft_lstadd_front.c	\
+$S/ft_lstsize.c		$S/ft_lstlast.c		$S/ft_lstadd_back.c		$S/ft_lstdelone.c		\
+$S/ft_lstclear.c	$S/ft_lstiter.c		$S/ft_lstmap.c			$S/get_next_line.c		\
+$S/ft_ulongtohex.c	$S/ft_ltoa.c
+OBJ			= $(SRC:$S%=$O%.o)
+
+RM			= /bin/rm -f
+RMDIR		= /bin/rmdir
+
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-	cc $(FLAGS) -c $(SRCS)
-	ar rcs $(NAME) $(OBJS)
+$O:
+	@mkdir $@
 
-clean:
-	rm -f $(OBJS)
+$(OBJ): | $O
+
+$(OBJ): $O%.o: $S%
+	$(CC) $(CFLAGS) $< -o $@
+
+$(NAME): $(OBJ)
+	$(AR) $(ARFLAGS) $@ $(OBJ)
+
+cleanobj:
+	$(RM) $(wildcard $(OBJ))
+
+cleanobjdir: cleanobj
+	$(RMDIR) $O
+
+clean: cleanobjdir
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
-
-so:
-	gcc $(FLAGS) -fPIC -c $(SRCS)
-	gcc -shared -o $(NAME:.a=.so) $(OBJS)
-
-debug:
-	cc $(FLAGS) -g -c $(SRCS)
-	ar rcs $(NAME) $(OBJS)
-
