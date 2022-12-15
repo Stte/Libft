@@ -14,4 +14,4 @@ jobs:
     - name: Install norminette
       run: python3 -m pip install norminette
     - name: Run norminette
-      run: norminette *.c *.h
+      run: norminette src inc
