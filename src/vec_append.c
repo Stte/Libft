@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 22:48:37 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/15 18:55:43 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/15 19:39:26 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	vec_append(t_vec *dst, t_vec *src)
 	if (dst->alloc_size * 2 < alloc_size_min)
 		ret = vec_resize(dst, dst->len + src->len);
 	else if (dst->alloc_size < alloc_size_min)
-		ret = vec_resize(dst, dst->len * 2);
+		ret = vec_resize(dst, (dst->alloc_size / dst->elem_size) * 2);
 	if (ret == -1)
 		return (-1);
 	ft_memcpy(&dst->memory[dst->elem_size * dst->len],
