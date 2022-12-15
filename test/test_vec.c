@@ -75,7 +75,7 @@ void test_vec_append(void)
 	TEST_ASSERT_EQUAL_MEMORY(expected, actual.memory, sizeof(expected));
 	TEST_ASSERT_TRUE_MESSAGE(actual.len == 6, "len");
 	TEST_ASSERT_TRUE_MESSAGE(actual.elem_size == sizeof(int), "elem_size");
-	TEST_ASSERT_TRUE_MESSAGE(actual.alloc_size == sizeof(int) * 6, "alloc_size");
+	TEST_ASSERT_TRUE_MESSAGE(actual.alloc_size == 24, "alloc_size");
 	vec_free(&actual);
 	vec_free(&t1);
 }
