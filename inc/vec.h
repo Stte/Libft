@@ -6,14 +6,14 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 22:48:26 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/15 15:14:46 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/17 01:29:12 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef VEC_H
 # define VEC_H
 
-# include "unistd.h"
+# include <stdlib.h>
 # include "libft.h"
 
 typedef struct s_vec

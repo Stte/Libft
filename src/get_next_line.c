@@ -6,11 +6,11 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 00:04:35 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/30 17:08:01 by tspoof           ###   ########.fr       */
+/*   Updated: 2022/12/17 01:28:15 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 static void	gnl_zerobuffer(char *buff)
 {
