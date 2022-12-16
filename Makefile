@@ -42,7 +42,7 @@ $(OBJ): $O%.o: $S%
 	$(CC) $(CFLAGS) $< -o $@
 
 $(NAME): $(OBJ)
-	$(AR) $(ARFLAGS) $@ $(OBJ)
+	$(AR) $(ARFLAGS) $@ $?
 
 cleanobj:
 	$(RM) $(wildcard $(OBJ))
