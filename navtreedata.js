@@ -25,13 +25,39 @@
 var NAVTREE =
 [
   [ "libft", "index.html", [
-    [ "libft", "md_README.html", null ]
+    [ "README", "md_docs_README.html", null ],
+    [ "libft", "md_README.html", null ],
+    [ "readme", "md_test_unity_readme.html", null ],
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Structure Index", "classes.html", null ],
+      [ "Data Fields", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "Globals", "globals.html", [
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
+      ] ]
+    ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"annotated.html",
+"structs__list.html",
+"unity_8h.html#a4defafaa2d4fc6027189f2c7f6a14af2",
+"unity_8h.html#acaf013104f109f13dc6f126800d7174a",
+"unity__internals_8h.html#a828517387e75bc0b3ee6a99d2e0722a4a7901b0c93cfa82ce8c7203132d4183ae"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
