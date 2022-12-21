@@ -27,7 +27,7 @@ $S/vec_from.c		$S/vec_new.c		$S/vec_push.c			$S/vec_resize.c
 OBJ			= $(SRC:$S%=$O%.o)
 
 RM			= /bin/rm -f
-RMDIR		= /bin/rmdir
+RMDIR		= /bin/rm -rf
 
 .PHONY: all clean fclean re
 
@@ -44,10 +44,7 @@ $(OBJ): $O%.o: $S%
 $(NAME): $(OBJ)
 	$(AR) $(ARFLAGS) $@ $?
 
-cleanobj:
-	$(RM) $(wildcard $(OBJ))
-
-cleanobjdir: cleanobj
+cleanobjdir: $O
 	$(RMDIR) $O
 
 clean: cleanobjdir
