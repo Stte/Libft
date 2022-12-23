@@ -103,6 +103,36 @@ void test_vec_push(void)
 	vec_free(&t1);
 }
 
+void test_vec_copy(void)
+{
+	t_vec   t1;
+	t_vec   t2;
+	int     base[] = {1, 2, 3, 4, 5};
+	TEST_ASSERT_TRUE_MESSAGE(vec_from(&t1, base, 5, sizeof(int)) > 0, "vec_from fail");
+	TEST_ASSERT_TRUE_MESSAGE(vec_new(&t2, 5, sizeof(int)) > 0, "vec_new fail");
+	TEST_ASSERT_TRUE_MESSAGE(vec_copy(&t2, &t1) > 0, "vec_copy fail");
+	TEST_ASSERT_EQUAL_MEMORY(base, t2.memory, sizeof(base));
+	vec_free(&t1);
+	vec_free(&t2);
+}
+
+void test_vec_copy_2(void)
+{
+	t_vec   t1;
+	t_vec   t2;
+	int     base[] = {1, 2, 3, 4, 5};
+	int     base2[] = {1, 2, 3};
+	TEST_ASSERT_TRUE_MESSAGE(vec_from(&t1, base, 5, sizeof(int)) > 0, "vec_from fail");
+	TEST_ASSERT_TRUE_MESSAGE(vec_new(&t2, 3, sizeof(int)) > 0, "vec_new fail");
+	TEST_ASSERT_TRUE_MESSAGE(vec_copy(&t2, &t1) > 0, "vec_copy fail");
+	TEST_ASSERT_EQUAL_MEMORY(base2, t2.memory, sizeof(base2));
+	TEST_ASSERT_TRUE_MESSAGE(t2.len == 3, "len");
+	TEST_ASSERT_TRUE_MESSAGE(t2.elem_size == sizeof(int), "elem_size");
+	TEST_ASSERT_TRUE_MESSAGE(t2.alloc_size == 3 * sizeof(int), "alloc_size");
+	vec_free(&t1);
+	vec_free(&t2);
+}
+
 int main(void)
 {
 	UNITY_BEGIN();
@@ -112,5 +142,7 @@ int main(void)
 	RUN_TEST(test_vec_resize);
 	RUN_TEST(test_vec_append);
 	RUN_TEST(test_vec_push);
+	RUN_TEST(test_vec_copy);
+	RUN_TEST(test_vec_copy_2);
 	return UNITY_END();
 }
