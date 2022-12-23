@@ -116,6 +116,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ae66e6f066bad05ff5bf1ba075ad3e5fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#ae66e6f066bad05ff5bf1ba075ad3e5fc">vec_append</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *dst, <a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *src)</td></tr>
 <tr class="memdesc:ae66e6f066bad05ff5bf1ba075ad3e5fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends memory to a vector.  <a href="vec_8h.html#ae66e6f066bad05ff5bf1ba075ad3e5fc">More...</a><br /></td></tr>
 <tr class="separator:ae66e6f066bad05ff5bf1ba075ad3e5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6030f05c7ff9d660be6b0955d2b6bec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#ac6030f05c7ff9d660be6b0955d2b6bec">vec_copy</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *dst, <a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *src)</td></tr>
+<tr class="separator:ac6030f05c7ff9d660be6b0955d2b6bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8325762864e66e2dba57cd0dbe5ada71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#a8325762864e66e2dba57cd0dbe5ada71">vec_free</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *src)</td></tr>
 <tr class="memdesc:a8325762864e66e2dba57cd0dbe5ada71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees vectors memory.  <a href="vec_8h.html#a8325762864e66e2dba57cd0dbe5ada71">More...</a><br /></td></tr>
 <tr class="separator:a8325762864e66e2dba57cd0dbe5ada71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +127,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a200e8b5c8c4828cd7a8140210a3bcf53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#a200e8b5c8c4828cd7a8140210a3bcf53">vec_new</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *dst, size_t init_len, size_t elem_size)</td></tr>
 <tr class="memdesc:a200e8b5c8c4828cd7a8140210a3bcf53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new vector.  <a href="vec_8h.html#a200e8b5c8c4828cd7a8140210a3bcf53">More...</a><br /></td></tr>
 <tr class="separator:a200e8b5c8c4828cd7a8140210a3bcf53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9080ed1d5d8ba2f6945669f4b6c07aa9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#a9080ed1d5d8ba2f6945669f4b6c07aa9">vec_prepend</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *dst, <a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *src)</td></tr>
+<tr class="memdesc:a9080ed1d5d8ba2f6945669f4b6c07aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepends memory to a vector.  <a href="vec_8h.html#a9080ed1d5d8ba2f6945669f4b6c07aa9">More...</a><br /></td></tr>
+<tr class="separator:a9080ed1d5d8ba2f6945669f4b6c07aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cabd6b29d11b37d1df361a4e2484ed6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#a1cabd6b29d11b37d1df361a4e2484ed6">vec_push</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *dst, void *src)</td></tr>
 <tr class="memdesc:a1cabd6b29d11b37d1df361a4e2484ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push element to the end of the vector.  <a href="vec_8h.html#a1cabd6b29d11b37d1df361a4e2484ed6">More...</a><br /></td></tr>
 <tr class="separator:a1cabd6b29d11b37d1df361a4e2484ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +191,36 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>int -1 if malloc fails otherwise 1 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vec__append_8c_source.html#l00017">17</a> of file <a class="el" href="vec__append_8c_source.html">vec_append.c</a>.</p>
+
+</div>
+</div>
+<a id="ac6030f05c7ff9d660be6b0955d2b6bec" name="ac6030f05c7ff9d660be6b0955d2b6bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6030f05c7ff9d660be6b0955d2b6bec">&#9670;&#160;</a></span>vec_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vec_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vec__copy_8c_source.html#l00022">22</a> of file <a class="el" href="vec__copy_8c_source.html">vec_copy.c</a>.</p>
 
 </div>
 </div>
@@ -320,6 +355,45 @@ Functions</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>Allocates memory </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vec__new_8c_source.html#l00016">16</a> of file <a class="el" href="vec__new_8c_source.html">vec_new.c</a>.</p>
+
+</div>
+</div>
+<a id="a9080ed1d5d8ba2f6945669f4b6c07aa9" name="a9080ed1d5d8ba2f6945669f4b6c07aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9080ed1d5d8ba2f6945669f4b6c07aa9">&#9670;&#160;</a></span>vec_prepend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vec_prepend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepends memory to a vector. </p>
+<p >Prepends *src memory to the start of the *dst memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>t_vec* </td></tr>
+    <tr><td class="paramname">src</td><td>t_vec* </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int -1 if malloc fails otherwise 1 </dd></dl>
 
 </div>
 </div>

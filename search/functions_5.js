@@ -30,9 +30,12 @@ var searchData=
   ['test_5ftf_5fsplit_5fshould_5fbe_5fequal_27',['test_tf_split_should_be_equal',['../test__libft_8c.html#ac5cb3ac3eb16e0d6af631a839939c30a',1,'test_libft.c']]],
   ['test_5fthreelines_5fshould_5fbe_5fequal_28',['test_threelines_should_be_equal',['../test__gnl_8c.html#a5cf09121cd696043bfa4833455d7a848',1,'test_gnl.c']]],
   ['test_5fvec_5fappend_29',['test_vec_append',['../test__vec_8c.html#a120560c2533213e1e211b5ffceeb4249',1,'test_vec.c']]],
-  ['test_5fvec_5ffree_30',['test_vec_free',['../test__vec_8c.html#ab13463195bc57f6a586a60efc2937560',1,'test_vec.c']]],
-  ['test_5fvec_5ffrom_31',['test_vec_from',['../test__vec_8c.html#a393379c71729b5472cac1f280883b8da',1,'test_vec.c']]],
-  ['test_5fvec_5fnew_32',['test_vec_new',['../test__vec_8c.html#af7d30052148816cda7ab29d5dff78e5e',1,'test_vec.c']]],
-  ['test_5fvec_5fpush_33',['test_vec_push',['../test__vec_8c.html#a74d7316a134d8582018b1d3f9127b641',1,'test_vec.c']]],
-  ['test_5fvec_5fresize_34',['test_vec_resize',['../test__vec_8c.html#a17d34ed7201c0797472f2e2a21cc2ab1',1,'test_vec.c']]]
+  ['test_5fvec_5fcopy_30',['test_vec_copy',['../test__vec_8c.html#a80d1a9c7209ed46376195586bd6331a0',1,'test_vec.c']]],
+  ['test_5fvec_5fcopy_5f2_31',['test_vec_copy_2',['../test__vec_8c.html#a940420239d33a53b6f3b8b73bb0e0222',1,'test_vec.c']]],
+  ['test_5fvec_5ffree_32',['test_vec_free',['../test__vec_8c.html#ab13463195bc57f6a586a60efc2937560',1,'test_vec.c']]],
+  ['test_5fvec_5ffrom_33',['test_vec_from',['../test__vec_8c.html#a393379c71729b5472cac1f280883b8da',1,'test_vec.c']]],
+  ['test_5fvec_5fnew_34',['test_vec_new',['../test__vec_8c.html#af7d30052148816cda7ab29d5dff78e5e',1,'test_vec.c']]],
+  ['test_5fvec_5fprepend_35',['test_vec_prepend',['../test__vec_8c.html#a28bd4d87af9740f5e6dd368beb041607',1,'test_vec.c']]],
+  ['test_5fvec_5fpush_36',['test_vec_push',['../test__vec_8c.html#a74d7316a134d8582018b1d3f9127b641',1,'test_vec.c']]],
+  ['test_5fvec_5fresize_37',['test_vec_resize',['../test__vec_8c.html#a17d34ed7201c0797472f2e2a21cc2ab1',1,'test_vec.c']]]
 ];

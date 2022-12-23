@@ -508,12 +508,15 @@ var searchData=
   ['test_5fthreelines_5fshould_5fbe_5fequal_505',['test_threelines_should_be_equal',['../test__gnl_8c.html#a5cf09121cd696043bfa4833455d7a848',1,'test_gnl.c']]],
   ['test_5fvec_2ec_506',['test_vec.c',['../test__vec_8c.html',1,'']]],
   ['test_5fvec_5fappend_507',['test_vec_append',['../test__vec_8c.html#a120560c2533213e1e211b5ffceeb4249',1,'test_vec.c']]],
-  ['test_5fvec_5ffree_508',['test_vec_free',['../test__vec_8c.html#ab13463195bc57f6a586a60efc2937560',1,'test_vec.c']]],
-  ['test_5fvec_5ffrom_509',['test_vec_from',['../test__vec_8c.html#a393379c71729b5472cac1f280883b8da',1,'test_vec.c']]],
-  ['test_5fvec_5fnew_510',['test_vec_new',['../test__vec_8c.html#af7d30052148816cda7ab29d5dff78e5e',1,'test_vec.c']]],
-  ['test_5fvec_5fpush_511',['test_vec_push',['../test__vec_8c.html#a74d7316a134d8582018b1d3f9127b641',1,'test_vec.c']]],
-  ['test_5fvec_5fresize_512',['test_vec_resize',['../test__vec_8c.html#a17d34ed7201c0797472f2e2a21cc2ab1',1,'test_vec.c']]],
-  ['testfailures_513',['TestFailures',['../structUNITY__STORAGE__T.html#a09833b8f72da6d7982f37ebc33111252',1,'UNITY_STORAGE_T']]],
-  ['testfile_514',['TestFile',['../structUNITY__STORAGE__T.html#a190c9e7550689c6dceedff539e650336',1,'UNITY_STORAGE_T']]],
-  ['testignores_515',['TestIgnores',['../structUNITY__STORAGE__T.html#a4fd439067fb0c1a82a5219077a513cda',1,'UNITY_STORAGE_T']]]
+  ['test_5fvec_5fcopy_508',['test_vec_copy',['../test__vec_8c.html#a80d1a9c7209ed46376195586bd6331a0',1,'test_vec.c']]],
+  ['test_5fvec_5fcopy_5f2_509',['test_vec_copy_2',['../test__vec_8c.html#a940420239d33a53b6f3b8b73bb0e0222',1,'test_vec.c']]],
+  ['test_5fvec_5ffree_510',['test_vec_free',['../test__vec_8c.html#ab13463195bc57f6a586a60efc2937560',1,'test_vec.c']]],
+  ['test_5fvec_5ffrom_511',['test_vec_from',['../test__vec_8c.html#a393379c71729b5472cac1f280883b8da',1,'test_vec.c']]],
+  ['test_5fvec_5fnew_512',['test_vec_new',['../test__vec_8c.html#af7d30052148816cda7ab29d5dff78e5e',1,'test_vec.c']]],
+  ['test_5fvec_5fprepend_513',['test_vec_prepend',['../test__vec_8c.html#a28bd4d87af9740f5e6dd368beb041607',1,'test_vec.c']]],
+  ['test_5fvec_5fpush_514',['test_vec_push',['../test__vec_8c.html#a74d7316a134d8582018b1d3f9127b641',1,'test_vec.c']]],
+  ['test_5fvec_5fresize_515',['test_vec_resize',['../test__vec_8c.html#a17d34ed7201c0797472f2e2a21cc2ab1',1,'test_vec.c']]],
+  ['testfailures_516',['TestFailures',['../structUNITY__STORAGE__T.html#a09833b8f72da6d7982f37ebc33111252',1,'UNITY_STORAGE_T']]],
+  ['testfile_517',['TestFile',['../structUNITY__STORAGE__T.html#a190c9e7550689c6dceedff539e650336',1,'UNITY_STORAGE_T']]],
+  ['testignores_518',['TestIgnores',['../structUNITY__STORAGE__T.html#a4fd439067fb0c1a82a5219077a513cda',1,'UNITY_STORAGE_T']]]
 ];

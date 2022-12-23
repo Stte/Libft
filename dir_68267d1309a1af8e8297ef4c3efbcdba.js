@@ -47,6 +47,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "ft_ulongtohex.c", "ft__ulongtohex_8c.html", "ft__ulongtohex_8c" ],
     [ "get_next_line.c", "get__next__line_8c.html", "get__next__line_8c" ],
     [ "vec_append.c", "vec__append_8c.html", "vec__append_8c" ],
+    [ "vec_copy.c", "vec__copy_8c.html", "vec__copy_8c" ],
     [ "vec_free.c", "vec__free_8c.html", "vec__free_8c" ],
     [ "vec_from.c", "vec__from_8c.html", "vec__from_8c" ],
     [ "vec_new.c", "vec__new_8c.html", "vec__new_8c" ],
