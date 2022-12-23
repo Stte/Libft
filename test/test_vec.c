@@ -133,6 +133,25 @@ void test_vec_copy_2(void)
 	vec_free(&t2);
 }
 
+void test_vec_prepend(void)
+{
+	t_vec	actual;
+	t_vec	t1;
+	int		base1[] = {1, 2, 3};
+	int		base2[] = {4, 5, 6};
+	int		expected[] = {4, 5, 6, 1, 2, 3};
+
+	TEST_ASSERT_TRUE_MESSAGE(vec_from(&actual, base1, 3, sizeof(int)) > 0, "vec_from fail");
+	TEST_ASSERT_TRUE_MESSAGE(vec_from(&t1, base2, 3, sizeof(int)) > 0, "vec_from fail");
+	TEST_ASSERT_TRUE_MESSAGE(vec_append(&actual, &t1) > 0, "vec_append fail");
+	TEST_ASSERT_EQUAL_MEMORY(expected, actual.memory, sizeof(expected));
+	TEST_ASSERT_TRUE_MESSAGE(actual.len == 6, "len");
+	TEST_ASSERT_TRUE_MESSAGE(actual.elem_size == sizeof(int), "elem_size");
+	TEST_ASSERT_TRUE_MESSAGE(actual.alloc_size == 24, "alloc_size");
+	vec_free(&actual);
+	vec_free(&t1);
+}
+
 int main(void)
 {
 	UNITY_BEGIN();
@@ -144,5 +163,6 @@ int main(void)
 	RUN_TEST(test_vec_push);
 	RUN_TEST(test_vec_copy);
 	RUN_TEST(test_vec_copy_2);
+	RUN_TEST(test_vec_prepend);
 	return UNITY_END();
 }
