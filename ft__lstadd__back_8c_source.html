@@ -95,18 +95,18 @@ $(document).ready(function(){initNavTree('ft__lstadd__back_8c_source.html',''); 
 <a href="ft__lstadd__back_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* ************************************************************************** */</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/*                                                                            */</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/*                                                        :::      ::::::::   */</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/*                                                    +:+ +:+         +:+     */</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/*   By: tspoof &lt;tspoof@student.hive.fi&gt;            +#+  +:+       +#+        */</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/*                                                +#+#+#+#+#+   +#+           */</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/*   Created: 2022/11/07 13:31:28 by tspoof            #+#    #+#             */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*   Updated: 2022/11/16 12:58:06 by tspoof           ###   ########.fr       */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*   Updated: 2023/02/14 14:56:56 by tspoof           ###   ########.fr       */</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*                                                                            */</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/* ************************************************************************** */</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="libft_8h.html">libft.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="libft_8h.html#a4c10e88fffc3c9467eb16e6debd227a4">   15</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="ft__lstadd__back_8c.html#a4c10e88fffc3c9467eb16e6debd227a4">ft_lstadd_back</a>(<a class="code hl_struct" href="structs__list.html">t_list</a> **lst, <a class="code hl_struct" href="structs__list.html">t_list</a> *<span class="keyword">new</span>)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="libft_8h.html#a7567f39f5aaf1c88feb4136547d1c896">   15</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="ft__lstadd__back_8c.html#a7567f39f5aaf1c88feb4136547d1c896">ft_lstadd_back</a>(<a class="code hl_struct" href="structs__list.html">t_list</a> **lst, <a class="code hl_struct" href="structs__list.html">t_list</a> *node)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_struct" href="structs__list.html">t_list</a>  *tmp;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
@@ -114,15 +114,15 @@ $(document).ready(function(){initNavTree('ft__lstadd__back_8c_source.html',''); 
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        return ;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span> (!(*lst))</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        *lst = <span class="keyword">new</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        *lst = node;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        return ;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    tmp = *lst;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">while</span> (tmp-&gt;<a class="code hl_variable" href="structs__list.html#a4bcaaa089cc834cf70b73bafa9af1e05">next</a>)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        tmp = tmp-&gt;<a class="code hl_variable" href="structs__list.html#a4bcaaa089cc834cf70b73bafa9af1e05">next</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    tmp-&gt;<a class="code hl_variable" href="structs__list.html#a4bcaaa089cc834cf70b73bafa9af1e05">next</a> = <span class="keyword">new</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    tmp-&gt;<a class="code hl_variable" href="structs__list.html#a4bcaaa089cc834cf70b73bafa9af1e05">next</a> = node;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
-<div class="ttc" id="aft__lstadd__back_8c_html_a4c10e88fffc3c9467eb16e6debd227a4"><div class="ttname"><a href="ft__lstadd__back_8c.html#a4c10e88fffc3c9467eb16e6debd227a4">ft_lstadd_back</a></div><div class="ttdeci">void ft_lstadd_back(t_list **lst, t_list *new)</div><div class="ttdoc">List add back.</div><div class="ttdef"><b>Definition:</b> <a href="ft__lstadd__back_8c_source.html#l00015">ft_lstadd_back.c:15</a></div></div>
+<div class="ttc" id="aft__lstadd__back_8c_html_a7567f39f5aaf1c88feb4136547d1c896"><div class="ttname"><a href="ft__lstadd__back_8c.html#a7567f39f5aaf1c88feb4136547d1c896">ft_lstadd_back</a></div><div class="ttdeci">void ft_lstadd_back(t_list **lst, t_list *node)</div><div class="ttdoc">List add back.</div><div class="ttdef"><b>Definition:</b> <a href="ft__lstadd__back_8c_source.html#l00015">ft_lstadd_back.c:15</a></div></div>
 <div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="libft_8h.html">libft.h</a></div></div>
 <div class="ttc" id="astructs__list_html"><div class="ttname"><a href="structs__list.html">s_list</a></div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00021">libft.h:22</a></div></div>
 <div class="ttc" id="astructs__list_html_a4bcaaa089cc834cf70b73bafa9af1e05"><div class="ttname"><a href="structs__list.html#a4bcaaa089cc834cf70b73bafa9af1e05">s_list::next</a></div><div class="ttdeci">struct s_list * next</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00024">libft.h:24</a></div></div>

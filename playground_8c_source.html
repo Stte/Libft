@@ -96,22 +96,10 @@ $(document).ready(function(){initNavTree('playground_8c_source.html',''); initRe
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="playground_8c.html#a840291bc02cba5474a4cb46a9b9566fe">    3</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="playground_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <a class="code hl_struct" href="structs__vec.html">t_vec</a>   actual;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_struct" href="structs__vec.html">t_vec</a>   t1;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">int</span>     base1[] = {1, 2, 3};</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">int</span>     base2[] = {4, 5, 6};</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// int      expected[] = {1, 2, 3, 4, 5, 6};</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_function" href="vec_8h.html#a990966b51daddc29a3590eee814069ea">vec_from</a>(&amp;actual, base1, 3, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_function" href="vec_8h.html#a990966b51daddc29a3590eee814069ea">vec_from</a>(&amp;t1, base2, 3, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="vec_8h.html#ae66e6f066bad05ff5bf1ba075ad3e5fc">vec_append</a>(&amp;actual, &amp;t1);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> (0);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordflow">return</span> (0);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
 <div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="libft_8h.html">libft.h</a></div></div>
 <div class="ttc" id="aplayground_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="playground_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="playground_8c_source.html#l00003">playground.c:3</a></div></div>
-<div class="ttc" id="astructs__vec_html"><div class="ttname"><a href="structs__vec.html">s_vec</a></div><div class="ttdef"><b>Definition:</b> <a href="vec_8h_source.html#l00019">vec.h:20</a></div></div>
-<div class="ttc" id="avec_8h_html_a990966b51daddc29a3590eee814069ea"><div class="ttname"><a href="vec_8h.html#a990966b51daddc29a3590eee814069ea">vec_from</a></div><div class="ttdeci">int vec_from(t_vec *dst, void *src, size_t len, size_t elem_size)</div><div class="ttdoc">Creates a new vector from src.</div><div class="ttdef"><b>Definition:</b> <a href="vec__from_8c_source.html#l00015">vec_from.c:15</a></div></div>
-<div class="ttc" id="avec_8h_html_ae66e6f066bad05ff5bf1ba075ad3e5fc"><div class="ttname"><a href="vec_8h.html#ae66e6f066bad05ff5bf1ba075ad3e5fc">vec_append</a></div><div class="ttdeci">int vec_append(t_vec *dst, t_vec *src)</div><div class="ttdoc">Appends memory to a vector.</div><div class="ttdef"><b>Definition:</b> <a href="vec__append_8c_source.html#l00017">vec_append.c:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
