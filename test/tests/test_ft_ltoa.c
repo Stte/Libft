@@ -1,12 +1,6 @@
 #include "unity/unity.h"
 #include "libft.h"
 
-void setUp(void) {
-}
-
-void tearDown(void) {
-}
-
 void test_ft_ltoa_1_should_be_equal(void) {
 	char	*actual;
 
@@ -50,7 +44,7 @@ void test_ft_ltoa_6_should_be_equal(void) {
 	free(actual);
 }
 
-int main(void)
+int test_ft_ltoa(void)
 {
 	UNITY_BEGIN();
 	RUN_TEST(test_ft_ltoa_1_should_be_equal);

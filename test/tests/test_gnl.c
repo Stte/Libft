@@ -2,12 +2,6 @@
 #include "get_next_line.h"
 #include <fcntl.h>
 
-void setUp(void) {
-}
-
-void tearDown(void) {
-}
-
 void	test_threelines_should_be_equal(void)
 {
 	int		fd = open("text/threelines", O_RDWR);
@@ -215,7 +209,7 @@ void	test_big_fd_should_be_equal(void)
 	free(actual);
 }
 
-int main(void)
+int test_gnl(void)
 {
 	UNITY_BEGIN();
 	RUN_TEST(test_threelines_should_be_equal);
