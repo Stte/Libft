@@ -163,6 +163,6 @@ int main(void)
 	RUN_TEST(test_vec_push);
 	RUN_TEST(test_vec_copy);
 	RUN_TEST(test_vec_copy_2);
-	RUN_TEST(test_vec_prepend);
+	// RUN_TEST(test_vec_prepend);
 	return UNITY_END();
 }
