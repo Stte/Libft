@@ -52,5 +52,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "vec_from.c", "vec__from_8c.html", "vec__from_8c" ],
     [ "vec_new.c", "vec__new_8c.html", "vec__new_8c" ],
     [ "vec_push.c", "vec__push_8c.html", "vec__push_8c" ],
+    [ "vec_remove.c", "vec__remove_8c.html", "vec__remove_8c" ],
     [ "vec_resize.c", "vec__resize_8c.html", "vec__resize_8c" ]
 ];
