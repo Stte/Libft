@@ -1,12 +1,11 @@
 FLAGS = -Wall -Werror -Wextra -g -I../inc -I./unity
 BUFFER_SIZE = -D BUFFER_SIZE=42
 SANITIZE = -fsanitize=address
-TEST = ./unity/unity.c
-LIBFT_TEST = ./test_libft.c
-GNL_TEST = ./test_gnl.c
-ULONGTOHEX_TEST = ./test_ft_ulongtohex.c
-LTOA_TEST = ./test_ft_ltoa.c
-VEC_TEST = ./test_vec.c
+TEST = ./unity/unity.c ./test.c
+T = ./tests/
+TESTS = \
+	$T/test_libft.c	$T/test_gnl.c	$T/test_ft_ulongtohex.c	\
+	$T/test_ft_ltoa.c	$T/test_vec.c
 
 all: clean run_test
 

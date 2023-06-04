@@ -58,8 +58,8 @@ re:
 	@make fclean
 	@make all
 
-run_test: $(LIBFT)
+run_test: $(NAME)
 	make -C ./test
 
-playground: $(LIBFT)
+playground: $(NAME)
 	make playground -C ./test

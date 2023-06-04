@@ -1,12 +1,5 @@
-#include "unity/unity.h"
+#include "unity.h"
 #include "vec.h"
-
-void setUp(void) {
-}
-
-void tearDown(void) {
-
-}
 
 void test_vec_new(void)
 {
@@ -164,7 +157,7 @@ void test_vec_prepend(void)
 // 	vec_free(&t1);
 // }
 
-int main(void)
+int test_vec(void)
 {
 	UNITY_BEGIN();
 	RUN_TEST(test_vec_new);

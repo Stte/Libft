@@ -1,4 +1,4 @@
-#include "unity/unity.h"
+#include "unity.h"
 #include "libft.h"
 
 void test_ft_atoi_should_be_equal_int(void) {
