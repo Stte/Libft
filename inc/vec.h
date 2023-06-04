@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 22:48:26 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/23 18:23:30 by tspoof           ###   ########.fr       */
+/*   Updated: 2023/06/04 22:19:00 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ typedef struct s_vec
 	size_t			len;
 }	t_vec;
 /**
- * @brief Appends memory to a vector.
+ * @brief Appends vector to a vector.
  *
  * Appends *src memory to end of *dst memory.
  *

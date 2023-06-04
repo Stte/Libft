@@ -1,4 +1,4 @@
-FLAGS = -Wall -Werror -Wextra -g -I../inc
+FLAGS = -Wall -Werror -Wextra -g -I../inc -I./unity
 BUFFER_SIZE = -D BUFFER_SIZE=42
 SANITIZE = -fsanitize=address
 TEST = ./unity/unity.c
