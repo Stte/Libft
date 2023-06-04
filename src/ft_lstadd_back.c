@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:31:28 by tspoof            #+#    #+#             */
-/*   Updated: 2022/11/16 12:58:06 by tspoof           ###   ########.fr       */
+/*   Updated: 2023/02/14 14:56:56 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *node)
 {
 	t_list	*tmp;
 
@@ -20,11 +20,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	if (!(*lst))
 	{
-		*lst = new;
+		*lst = node;
 		return ;
 	}
 	tmp = *lst;
 	while (tmp->next)
 		tmp = tmp->next;
-	tmp->next = new;
+	tmp->next = node;
 }

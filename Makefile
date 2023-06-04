@@ -6,6 +6,7 @@ I			= inc/
 
 CC			= cc
 CFLAGS		= -Wall -Werror -Wextra -c -I$I
+FLAGS		=
 
 AR			= ar
 ARFLAGS		= rcs
@@ -24,7 +25,7 @@ $S/ft_lstsize.c		$S/ft_lstlast.c		$S/ft_lstadd_back.c		$S/ft_lstdelone.c		\
 $S/ft_lstclear.c	$S/ft_lstiter.c		$S/ft_lstmap.c			$S/get_next_line.c		\
 $S/ft_ulongtohex.c	$S/ft_ltoa.c		$S/vec_append.c			$S/vec_free.c			\
 $S/vec_from.c		$S/vec_new.c		$S/vec_push.c			$S/vec_resize.c			\
-$S/vec_copy.c		$S/vec_prepend.c
+$S/vec_copy.c
 OBJ			= $(SRC:$S%=$O%.o)
 
 RM			= /bin/rm -f
@@ -40,7 +41,7 @@ $O:
 $(OBJ): | $O
 
 $(OBJ): $O%.o: $S%
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $(FLAGS) $< -o $@
 
 $(NAME): $(OBJ)
 	$(AR) $(ARFLAGS) $@ $?
@@ -53,4 +54,12 @@ clean: cleanobjdir
 fclean: clean
 	$(RM) $(NAME)
 
-re: fclean all
+re:
+	@make fclean
+	@make all
+
+run_test: $(LIBFT)
+	make -C ./test
+
+playground: $(LIBFT)
+	make playground -C ./test

@@ -1,12 +1,6 @@
 #include "unity/unity.h"
 #include "libft.h"
 
-void setUp(void) {
-}
-
-void tearDown(void) {
-}
-
 void test_ft_atoi_should_be_equal_int(void) {
 	TEST_ASSERT_EQUAL_INT(42, ft_atoi("42"));
 }
@@ -29,7 +23,7 @@ void test_tf_split_should_be_equal(void)
 	free(actual);
 }
 
-int main(void)
+int test_libft(void)
 {
 	UNITY_BEGIN();
 	RUN_TEST(test_ft_atoi_should_be_equal_int);

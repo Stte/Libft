@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:09:24 by tspoof            #+#    #+#             */
-/*   Updated: 2022/12/15 15:05:11 by tspoof           ###   ########.fr       */
+/*   Updated: 2023/02/14 14:56:21 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,14 +102,14 @@ char	*ft_itoa(int n);
  * @param lst
  * @param new
  */
-void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *node);
 /**
  * @brief List add front.
  *
  * @param lst
  * @param new
  */
-void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *node);
 /**
  * @brief Clear list.
  *

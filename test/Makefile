@@ -8,33 +8,17 @@ ULONGTOHEX_TEST = ./test_ft_ulongtohex.c
 LTOA_TEST = ./test_ft_ltoa.c
 VEC_TEST = ./test_vec.c
 
-all: build libft gnl ulongtohex ltoa vec
+all: clean run_test
 
-build:
+$(LIBFT): $(LIBFT)
 	make -C ..
 
-libft:
-	gcc $(FLAGS) $(SANITIZE) $(TEST) $(LIBFT_TEST) -L.. -lft -o run_libft
-	./run_libft
-
-gnl:
-	$(CC) $(FLAGS) $(SANITIZE) $(TEST) $(GNL_TEST) -L.. -lft -o run_gnl
-	./run_gnl
-
-ulongtohex:
-	$(CC) $(FLAGS) $(SANITIZE) $(TEST) $(ULONGTOHEX_TEST) -L.. -lft -o run_ulongtohex
-	./run_ulongtohex
-
-ltoa:
-	$(CC) $(FLAGS) $(SANITIZE) $(TEST) $(LTOA_TEST) -L.. -lft -o run_ltoa
-	./run_ltoa
-
-vec:
-	gcc $(FLAGS) $(SANITIZE) $(TEST) $(VEC_TEST) -L.. -lft -o run_vec
-	./run_vec
+run_test: $(LIBFT)
+	gcc $(FLAGS) $(INCLUDES) $(SANITIZE) $(TEST) $(TESTS) -L.. -lft -o run_tests
+	./run_tests
 
 playground:
-	$(CC) $(FLAGS) $(SANITIZE) playground.c -L.. -lft -o run_playground
+	gcc $(FLAGS) $(INCLUDES) $(SANITIZE) playground.c -L.. -lft -o run_playground
 	./run_playground
 
 clean:
