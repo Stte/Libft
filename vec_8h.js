@@ -9,5 +9,6 @@ var vec_8h =
     [ "vec_new", "vec_8h.html#a200e8b5c8c4828cd7a8140210a3bcf53", null ],
     [ "vec_prepend", "vec_8h.html#a9080ed1d5d8ba2f6945669f4b6c07aa9", null ],
     [ "vec_push", "vec_8h.html#a1cabd6b29d11b37d1df361a4e2484ed6", null ],
+    [ "vec_remove", "vec_8h.html#a2bb29455627c806a5c10467bc803db71", null ],
     [ "vec_resize", "vec_8h.html#ab9202dc6456672842933bf2994a87b60", null ]
 ];

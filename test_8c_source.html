@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('test_8c_source.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <a href="test_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="test_8h.html">test.h</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="unity_8h.html">unity/unity.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="unity_8h.html">unity.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// #include &quot;ft_printf.h&quot;</span></div>
@@ -102,9 +102,9 @@ $(document).ready(function(){initNavTree('test_8c_source.html',''); initResizabl
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="test_8c.html#a9909011e5fea0c018842eec4d93d0662">   10</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="test_8c.html#a9909011e5fea0c018842eec4d93d0662">tearDown</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    FILE *fp = freopen(<span class="stringliteral">&quot;test_output&quot;</span>, <span class="stringliteral">&quot;w+&quot;</span>, stdout);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    fclose(fp);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    freopen(<span class="stringliteral">&quot;/dev/tty&quot;</span>, <span class="stringliteral">&quot;w&quot;</span>, stdout);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">// FILE *fp = freopen(&quot;test_output&quot;, &quot;w+&quot;, stdout);</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// fclose(fp);</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// freopen(&quot;/dev/tty&quot;, &quot;w&quot;, stdout);</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="test_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   16</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="test_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('test_8c_source.html',''); initResizabl
 <div class="ttc" id="atest_8h_html"><div class="ttname"><a href="test_8h.html">test.h</a></div></div>
 <div class="ttc" id="atest_8h_html_a020a36b678d1c7b4d839d9886017c2e2"><div class="ttname"><a href="test_8h.html#a020a36b678d1c7b4d839d9886017c2e2">test_ft_ltoa</a></div><div class="ttdeci">int test_ft_ltoa(void)</div><div class="ttdef"><b>Definition</b> <a href="test__ft__ltoa_8c_source.html#l00047">test_ft_ltoa.c:47</a></div></div>
 <div class="ttc" id="atest_8h_html_a14c6cd7160385db729eaafc339dcb363"><div class="ttname"><a href="test_8h.html#a14c6cd7160385db729eaafc339dcb363">test_gnl</a></div><div class="ttdeci">int test_gnl(void)</div><div class="ttdef"><b>Definition</b> <a href="test__gnl_8c_source.html#l00212">test_gnl.c:212</a></div></div>
-<div class="ttc" id="atest_8h_html_a3e6c393d822dff075828f03931c14ae5"><div class="ttname"><a href="test_8h.html#a3e6c393d822dff075828f03931c14ae5">test_vec</a></div><div class="ttdeci">int test_vec(void)</div><div class="ttdef"><b>Definition</b> <a href="test__vec_8c_source.html#l00160">test_vec.c:160</a></div></div>
+<div class="ttc" id="atest_8h_html_a3e6c393d822dff075828f03931c14ae5"><div class="ttname"><a href="test_8h.html#a3e6c393d822dff075828f03931c14ae5">test_vec</a></div><div class="ttdeci">int test_vec(void)</div><div class="ttdef"><b>Definition</b> <a href="test__vec_8c_source.html#l00161">test_vec.c:161</a></div></div>
 <div class="ttc" id="atest_8h_html_a56dd5f8bec1ddec22d462b690579d9bc"><div class="ttname"><a href="test_8h.html#a56dd5f8bec1ddec22d462b690579d9bc">test_libft</a></div><div class="ttdeci">int test_libft(void)</div><div class="ttdef"><b>Definition</b> <a href="test__libft_8c_source.html#l00026">test_libft.c:26</a></div></div>
 <div class="ttc" id="atest_8h_html_abb4e5ac69a6c1a913700c30307964661"><div class="ttname"><a href="test_8h.html#abb4e5ac69a6c1a913700c30307964661">test_ft_ulongtohex</a></div><div class="ttdeci">int test_ft_ulongtohex(void)</div><div class="ttdef"><b>Definition</b> <a href="test__ft__ulongtohex_8c_source.html#l00075">test_ft_ulongtohex.c:75</a></div></div>
 <div class="ttc" id="aunity_8h_html"><div class="ttname"><a href="unity_8h.html">unity.h</a></div></div>

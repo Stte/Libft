@@ -523,8 +523,9 @@ var searchData=
   ['test_5fvec_5fnew_520',['test_vec_new',['../test__vec_8c.html#af7d30052148816cda7ab29d5dff78e5e',1,'test_vec.c']]],
   ['test_5fvec_5fprepend_521',['test_vec_prepend',['../test__vec_8c.html#a28bd4d87af9740f5e6dd368beb041607',1,'test_vec.c']]],
   ['test_5fvec_5fpush_522',['test_vec_push',['../test__vec_8c.html#a74d7316a134d8582018b1d3f9127b641',1,'test_vec.c']]],
-  ['test_5fvec_5fresize_523',['test_vec_resize',['../test__vec_8c.html#a17d34ed7201c0797472f2e2a21cc2ab1',1,'test_vec.c']]],
-  ['testfailures_524',['TestFailures',['../structUNITY__STORAGE__T.html#a09833b8f72da6d7982f37ebc33111252',1,'UNITY_STORAGE_T']]],
-  ['testfile_525',['TestFile',['../structUNITY__STORAGE__T.html#a190c9e7550689c6dceedff539e650336',1,'UNITY_STORAGE_T']]],
-  ['testignores_526',['TestIgnores',['../structUNITY__STORAGE__T.html#a4fd439067fb0c1a82a5219077a513cda',1,'UNITY_STORAGE_T']]]
+  ['test_5fvec_5fremove_5f0_523',['test_vec_remove_0',['../test__vec_8c.html#a508a8bd6ada292009af70623574555b3',1,'test_vec.c']]],
+  ['test_5fvec_5fresize_524',['test_vec_resize',['../test__vec_8c.html#a17d34ed7201c0797472f2e2a21cc2ab1',1,'test_vec.c']]],
+  ['testfailures_525',['TestFailures',['../structUNITY__STORAGE__T.html#a09833b8f72da6d7982f37ebc33111252',1,'UNITY_STORAGE_T']]],
+  ['testfile_526',['TestFile',['../structUNITY__STORAGE__T.html#a190c9e7550689c6dceedff539e650336',1,'UNITY_STORAGE_T']]],
+  ['testignores_527',['TestIgnores',['../structUNITY__STORAGE__T.html#a4fd439067fb0c1a82a5219077a513cda',1,'UNITY_STORAGE_T']]]
 ];

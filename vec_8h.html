@@ -136,6 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab9202dc6456672842933bf2994a87b60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#ab9202dc6456672842933bf2994a87b60">vec_resize</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *src, size_t target_len)</td></tr>
 <tr class="memdesc:ab9202dc6456672842933bf2994a87b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes vector.  <br /></td></tr>
 <tr class="separator:ab9202dc6456672842933bf2994a87b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb29455627c806a5c10467bc803db71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8h.html#a2bb29455627c806a5c10467bc803db71">vec_remove</a> (<a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *src, size_t index)</td></tr>
+<tr class="memdesc:a2bb29455627c806a5c10467bc803db71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes item at index.  <br /></td></tr>
+<tr class="separator:a2bb29455627c806a5c10467bc803db71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a732266cd85519fcc4c080c94c5654f56" name="a732266cd85519fcc4c080c94c5654f56"></a>
@@ -435,6 +438,46 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>int -1 if malloc fails otherwise 1 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vec__push_8c_source.html#l00017">17</a> of file <a class="el" href="vec__push_8c_source.html">vec_push.c</a>.</p>
+
+</div>
+</div>
+<a id="a2bb29455627c806a5c10467bc803db71" name="a2bb29455627c806a5c10467bc803db71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb29455627c806a5c10467bc803db71">&#9670;&#160;</a></span>vec_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vec_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vec_8h.html#a732266cd85519fcc4c080c94c5654f56">t_vec</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes item at index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>t_vec </td></tr>
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vec__remove_8c_source.html#l00015">15</a> of file <a class="el" href="vec__remove_8c_source.html">vec_remove.c</a>.</p>
 
 </div>
 </div>
