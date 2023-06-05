@@ -144,18 +144,19 @@ void test_vec_prepend(void)
 	vec_free(&actual);
 	vec_free(&t1);
 }
-// void test_vec_remove(void)
-// {
-// 	t_vec	t1;
-// 	int		base[] = {1, 2, 3, 4, 5};
-// 	int		expected[] = {1, 3, 5};
+void test_vec_remove_0(void)
+{
+	t_vec	t1;
+	int		base[] = {1, 2, 3, 4, 5};
+	int		expected[] = {1, 3, 4};
 
-// 	TEST_ASSERT_TRUE(vec_from(&t1, base, 5, sizeof(int)) > 0);
-// 	vec_remove(&t1, 1);
-// 	vec_remove(&t1, 3);
-// 	TEST_ASSERT_EQUAL_INT_ARRAY(expected, t1.memory, 3);
-// 	vec_free(&t1);
-// }
+	TEST_ASSERT_TRUE(vec_from(&t1, base, 5, sizeof(int)) > 0);
+	vec_remove(&t1, 1);
+	vec_remove(&t1, 3);
+	TEST_ASSERT_EQUAL_INT_ARRAY(expected, t1.memory, 3);
+	TEST_ASSERT_EQUAL_INT32(3, t1.len);
+	vec_free(&t1);
+}
 
 int test_vec(void)
 {
@@ -168,6 +169,7 @@ int test_vec(void)
 	RUN_TEST(test_vec_push);
 	RUN_TEST(test_vec_copy);
 	RUN_TEST(test_vec_copy_2);
+	RUN_TEST(test_vec_remove_0);
 	// RUN_TEST(test_vec_prepend);
 	return UNITY_END();
 }

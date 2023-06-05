@@ -6,7 +6,7 @@
 /*   By: tspoof <tspoof@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 22:48:26 by tspoof            #+#    #+#             */
-/*   Updated: 2023/06/04 22:19:00 by tspoof           ###   ########.fr       */
+/*   Updated: 2023/06/05 11:03:02 by tspoof           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,5 +101,13 @@ int		vec_push(t_vec *dst, void *src);
  * @return int -1 if malloc fails otherwise 1
  */
 int		vec_resize(t_vec *src, size_t target_len);
+/**
+ * @brief Removes item at index
+ *
+ * @param src t_vec
+ * @param index
+ * @return int
+ */
+int		vec_remove(t_vec *src, size_t index);
 
 #endif
